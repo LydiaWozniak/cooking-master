@@ -1,0 +1,46 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  front-build-and-test:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
+      
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - front-v2-dependencies-{{ checksum "front/package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - front-v2-dependencies-
+
+      - run:
+          name: Install dependencies
+          command: cd front && npm install
+
+      - save_cache:
+          paths:
+            - front/node_modules
+          key: front-v2-dependencies-{{ checksum "front/package.json" }}
+
+      - run:
+          name: Run tests
+          command: cd front && npm run test
+
+workflows:
+  version: 2
+  front-build-and-test: 
+    jobs: 
+      - front-build-and-test
