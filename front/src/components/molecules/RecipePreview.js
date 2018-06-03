@@ -49,6 +49,11 @@ const Starred = styled.img`
 // }
 
 class RecipePreview extends Component {
+
+  buttonClicked(e) {
+    console.log('clicked', this.props)
+  }
+
   static propTypes = {
     name: PropTypes.string.isRequired,
     mainIngredients: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -58,7 +63,7 @@ class RecipePreview extends Component {
 
   render() {
     return (
-      <RecipeContents>
+      <RecipeContents onClick={this.buttonClicked.bind(this)}>
         <List>
           <li>{this.props.name}</li>
           <li>{this.props.mainIngredients.join(', ')}</li>
