@@ -23,7 +23,9 @@ class FullRecipe extends Component {
           <h1>{this.props.name}</h1>
           <h3>{this.cookingTime}</h3> 
           <ul>
-            <li>{this.props.ingredients.join(', ')}</li>
+            {this.props.ingredients.map(({quantity, name}) => (
+              <li key={name}>{quantity} {name}</li>  
+            ))}
           </ul> 
         <img src={this.props.image} alt={`Image of ${this.props.name}`}/> 
         <img src={emptystar} alt="starred"/>
