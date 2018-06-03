@@ -9,8 +9,6 @@ const Page = styled.div`
   flex-direction: column; 
 `;
 
-
-
 class App extends Component {
 
   render() {
@@ -18,7 +16,7 @@ class App extends Component {
       <Page>
         <Header/> 
         <Nav/> 
-        <Newsfeed/> 
+        <Newsfeed/>
       </Page>
     );
   }

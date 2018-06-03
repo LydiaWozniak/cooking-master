@@ -20,8 +20,8 @@ describe('<FullRecipe />', () => {
     const tree = renderer.create(
       <FullRecipe
         name={recipe.name} 
-        ingredients={recipe.ingredients} 
         cookingTime={recipe.cookingTime}
+        ingredients={recipe.ingredients} 
         image={recipe.image}
       />
     ).toJSON();
