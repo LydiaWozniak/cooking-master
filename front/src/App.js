@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Header } from './components/organisms';
-import { Nav } from './components/organisms';
-import { Newsfeed } from './components/organisms';
+import { Header, Nav, Newsfeed } from './components/organisms';
 import './App.css';
 
 const Page = styled.div`
