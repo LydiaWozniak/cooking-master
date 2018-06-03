@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import emptystar from '../atoms/EmptyStar.svg';
 // import recipes from '../../assets/recipes.json'; 
 
-const RecipeContents = styled.div`
+const RecipeContents = styled.article`
   display: flex; 
   flex-wrap: nowrap;
   justify-content: space-evenly; 
@@ -50,10 +50,6 @@ const Starred = styled.img`
 
 class RecipePreview extends Component {
 
-  buttonClicked(e) {
-    console.log('clicked', this.props)
-  }
-
   static propTypes = {
     name: PropTypes.string.isRequired,
     mainIngredients: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -63,13 +59,13 @@ class RecipePreview extends Component {
 
   render() {
     return (
-      <RecipeContents onClick={this.buttonClicked.bind(this)}>
+      <RecipeContents>
         <List>
           <li>{this.props.name}</li>
           <li>{this.props.mainIngredients.join(', ')}</li>
           <li>{this.props.cookingTime}</li>
         </List>   
-        <Image src={this.props.image} alt={`Image of ${this.props.name}`}/> 
+        <Image src={this.props.image} alt={this.props.name}/> 
         <Starred src={emptystar} alt="starred"/>
       </RecipeContents>  
         

@@ -1,7 +1,36 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import emptystar from '../atoms/EmptyStar.svg';
+
+const RecipeContents = styled.article`
+  display: flex; 
+  flex-wrap: nowrap;
+  justify-content: space-evenly; 
+  align-content: center;  
+  border: 2px solid #635155;
+  margin: 5%; 
+  box-sizing: border-box;
+`;
+
+const List = styled.ul`
+  list-style-type: none;
+  align-self: center; 
+`;
+
+const Image = styled.img`
+  height: 100px;
+  width: 100px;
+  align-self: center; 
+`;
+
+const Starred = styled.img`
+  height: 20px;
+  align-self: center; 
+  &:hover {
+    background: #635155;
+  }
+`;
 
 class FullRecipe extends Component {
   static propTypes = {
@@ -19,17 +48,17 @@ class FullRecipe extends Component {
 
   render() {
     return (
-      <article>
+      <RecipeContents>
           <h1>{this.props.name}</h1>
-          <h3>{this.cookingTime}</h3> 
-          <ul>
+          <List>
+            <li><h3>{this.props.cookingTime}</h3></li>
             {this.props.ingredients.map(({quantity, name}) => (
-              <li key={name}>{quantity} {name}</li>  
+              <li key={name}>{quantity} of {name}</li>  
             ))}
-          </ul> 
-        <img src={this.props.image} alt={`Image of ${this.props.name}`}/> 
-        <img src={emptystar} alt="starred"/>
-      </article>  
+          </List> 
+        <Image src={this.props.image} alt={this.props.name}/> 
+        <Starred src={emptystar} alt="starred"/>
+      </RecipeContents>  
         
     );
   }
