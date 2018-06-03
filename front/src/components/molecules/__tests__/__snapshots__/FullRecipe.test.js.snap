@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FullRecipe /> should match default snapshot 1`] = `
+<article>
+  <h1>
+    Lemon Cheese Cake
+  </h1>
+  <h3 />
+  <ul>
+    <li>
+      4
+       
+      Eggs
+    </li>
+    <li>
+      1 cup
+       
+      Cream Cheese
+    </li>
+    <li>
+      5
+       
+      Lemon
+    </li>
+  </ul>
+  <img
+    alt="Image of Lemon Cheese Cake"
+    src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"
+  />
+  <img
+    alt="starred"
+    src="EmptyStar.svg"
+  />
+</article>
+`;

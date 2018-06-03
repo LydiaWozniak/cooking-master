@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
 import styled from 'styled-components';
 import FullRecipe from '../FullRecipe';
 
@@ -14,16 +15,16 @@ const recipe = {
   image: "https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg", 
 };
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(
-    <FullRecipe
-      name={recipe.name} 
-      ingredients={recipe.ingredients} 
-      cookingTime={recipe.cookingTime}
-      image={recipe.image}
-    />
-   , div);
+describe('<FullRecipe />', () => {
+  it('should match default snapshot', () => {
+    const tree = renderer.create(
+      <FullRecipe
+        name={recipe.name} 
+        ingredients={recipe.ingredients} 
+        cookingTime={recipe.cookingTime}
+        image={recipe.image}
+      />
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
-
-
