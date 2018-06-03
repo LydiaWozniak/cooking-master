@@ -54,12 +54,13 @@ class RecipePreview extends Component {
     name: PropTypes.string.isRequired,
     mainIngredients: PropTypes.arrayOf(PropTypes.string).isRequired,
     cookingTime: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired
   }
 
   render() {
     return (
-      <RecipeContents>
+      <RecipeContents onClick={this.props.onClick}>
         <List>
           <li>{this.props.name}</li>
           <li>{this.props.mainIngredients.join(', ')}</li>

@@ -43,12 +43,13 @@ class FullRecipe extends Component {
       ]),
       name: PropTypes.string.isRequired
     })).isRequired,
-    image: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired
   }
 
   render() {
     return (
-      <RecipeContents>
+      <RecipeContents onClick={this.props.onClick}>
           <h1>{this.props.name}</h1>
           <List>
             <li><h3>{this.props.cookingTime}</h3></li>

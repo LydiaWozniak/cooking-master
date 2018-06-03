@@ -3,6 +3,7 @@
 exports[`<FullRecipe /> should match default snapshot 1`] = `
 <article
   className="sc-bdVaJa flGKDD"
+  onClick={undefined}
 >
   <h1>
     Lemon Cheese Cake

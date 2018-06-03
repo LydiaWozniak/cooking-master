@@ -14,50 +14,44 @@ const Container = styled.div`
 
 
 export default class Newsfeed extends Component {
-	constructor(props){
-		super(props);
-			this.handleExpandClick = this.handleExpandClick.bind(this);
-			this.handleCollapseClick = this.handleCollapseClick.bind(this);
-			this.state = {isOpen: false};
-		}
+	state = {
+		openedRecipe: null 
+	}
 
-		handleExpandClick() {
+		handleExpandClick = (key) => {
 			console.log(this)
-			this.setState({isOpen: true});
+			this.setState({openedRecipe: key});
 		}
 
-		handleCollapseClick() {
-			this.setState({isOpen: false});
+		handleCollapseClick = (key) => {
+			this.setState({openedRecipe: null});
 		}
 		
 		render() {
-			const isOpen = this.state.isOpen;
-			const display = !isOpen ? (
+			const display = (
 				<div>
-					<Container onClick={this.handleExpandClick.bind(this)}>
+					<Container>
 						{Object.entries(recipes).map(([key, recipe]) => (
-							<RecipePreview
-								key={key}
-								name={recipe.name} 
-								mainIngredients={recipe.mainIngredients} 
-								cookingTime={recipe.cookingTime}
-								image={recipe.image}
-							/>
-						))}
-					</Container>   
-				</div>
-			 ) : (
-					<div>
-					<Container onClick={this.handleCollapseClick.bind(this)}>
-						{Object.entries(recipes).map(([key, recipe]) => (
-							<FullRecipe
-								key={key}
-								name={recipe.name} 
-								cookingTime={recipe.cookingTime}
-								ingredients={recipe.ingredients} 
-								image={recipe.image}
-							/>
-						))}
+							key === this.state.openedRecipe ? (
+								<FullRecipe
+									onClick={() => this.handleCollapseClick(key)}
+									key={key}
+									name={recipe.name} 
+									cookingTime={recipe.cookingTime}
+									ingredients={recipe.ingredients} 
+									image={recipe.image}
+								/>
+							) : (
+								<RecipePreview
+									onClick={() => this.handleExpandClick(key)}
+									key={key}
+									name={recipe.name} 
+									mainIngredients={recipe.mainIngredients} 
+									cookingTime={recipe.cookingTime}
+									image={recipe.image}
+								/> 
+							) 
+						))} 
 					</Container>   
 				</div>
 			 )
