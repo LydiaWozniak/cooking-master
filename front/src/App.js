@@ -9,7 +9,10 @@ const Page = styled.div`
   flex-direction: column; 
 `;
 
+
+
 class App extends Component {
+
   render() {
     return (
       <Page>
