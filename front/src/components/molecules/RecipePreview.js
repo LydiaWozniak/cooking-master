@@ -62,7 +62,7 @@ class RecipePreview extends Component {
     return (
       <RecipeContents onClick={this.props.onClick}>
         <List>
-          <li>{this.props.name}</li>
+          <li><h1>{this.props.name}</h1></li>
           <li>{this.props.mainIngredients.join(', ')}</li>
           <li>{this.props.cookingTime}</li>
         </List>   
