@@ -3,11 +3,7 @@ import styled from 'styled-components';
 import star from '../atoms/Star.svg';
 
 const List = styled.ul`
-  display: flex; 
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  list-style-type: none;
-  align-items: center; 
+  list-style-type: none; 
 `;
 
 const Item = styled.li`
@@ -25,15 +21,15 @@ const Starred = styled.img`
 
 
 class Filters extends Component {
-render() {
-  return (
-    <List>
-        <Item>All</Item>
-        <Item><Starred src={star} alt="starred"/></Item>
-    </List>   
-      
-  );
-}
+  render() {
+    return (
+      <List>
+          <Item>All</Item>
+          <Item><Starred src={star} alt="starred"/></Item>
+      </List>   
+        
+    );
+  }
 }
 
 export default Filters;

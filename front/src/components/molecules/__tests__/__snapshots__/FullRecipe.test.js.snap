@@ -34,7 +34,7 @@ exports[`<FullRecipe /> should match default snapshot 1`] = `
   </ul>
   <img
     alt="Lemon Cheese Cake"
-    className="sc-htpNat cmAbLY"
+    className="sc-htpNat hYUzna"
     src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"
   />
   <img

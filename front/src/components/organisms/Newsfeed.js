@@ -4,14 +4,12 @@ import RecipePreview from '../molecules/RecipePreview.js';
 import FullRecipe from '../molecules/FullRecipe.js'; 
 import recipes from '../../assets/recipes.json'; 
 
-
 const Container = styled.div`
 	background: #FFFFFF; 
 	border: 2px solid #635155;
 	border-radius: 5px; 
 	width: 100%; 
 `;
-
 
 export default class Newsfeed extends Component {
 	state = {
