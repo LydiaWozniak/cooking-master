@@ -33,6 +33,7 @@ const Starred = styled.img`
 `;
 
 class FullRecipe extends Component {
+
   static propTypes = {
     name: PropTypes.string.isRequired,
     cookingTime: PropTypes.string.isRequired,
@@ -44,12 +45,12 @@ class FullRecipe extends Component {
       name: PropTypes.string.isRequired
     })).isRequired,
     image: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired
+    onClick: PropTypes.func.isRequired,
   }
 
   render() {
     return (
-      <RecipeContents onClick={this.props.onClick}>
+      <RecipeContents>
           <h1>{this.props.name}</h1>
           <List>
             <li><h3>{this.props.cookingTime}</h3></li>
@@ -58,7 +59,8 @@ class FullRecipe extends Component {
             ))}
           </List> 
         <Image src={this.props.image} alt={this.props.name}/> 
-        <Starred src={emptystar} alt="starred"/>
+        <Starred src={emptystar} alt="not starred"/>
+        <button onClick={this.props.onClick}><span role='img' aria-label="exit-button">❌</span></button>
       </RecipeContents>  
         
     );

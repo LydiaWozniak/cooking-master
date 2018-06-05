@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import star from '../atoms/Star.svg';
 
 const List = styled.ul`
-  list-style-type: none; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center; 
 `;
 
 const Item = styled.li`
-  display: inline;
   padding-left: 1em; 
+  list-style-type: none; 
 
   &:hover {
   background: #635155;

@@ -10,7 +10,7 @@ const RecipeContents = styled.article`
   justify-content: space-evenly; 
   align-content: center;  
   border: 2px solid #635155;
-  margin: 5%; 
+  margin: 10%; 
   box-sizing: border-box;
 `;
 
@@ -52,8 +52,6 @@ class RecipePreview extends Component {
 
   static propTypes = {
     name: PropTypes.string.isRequired,
-    mainIngredients: PropTypes.arrayOf(PropTypes.string).isRequired,
-    cookingTime: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired
   }
@@ -63,8 +61,6 @@ class RecipePreview extends Component {
       <RecipeContents onClick={this.props.onClick}>
         <List>
           <li><h1>{this.props.name}</h1></li>
-          <li>{this.props.mainIngredients.join(', ')}</li>
-          <li>{this.props.cookingTime}</li>
         </List>   
         <Image src={this.props.image} alt={this.props.name}/> 
         <Starred src={emptystar} alt="starred"/>

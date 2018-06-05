@@ -11,12 +11,17 @@ const Page = styled.div`
 
 class App extends Component {
 
+  submitFilter = (e) => {
+    e.preventDefault();
+    console.log('this is:', this);
+  }
+
   render() {
     return (
       <Page>
         <Header/> 
         <Nav/> 
-        <Newsfeed/>
+        <Newsfeed onClick={this.submitFilter}/>
       </Page>
     );
   }
