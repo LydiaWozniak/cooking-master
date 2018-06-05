@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Search = styled.form`
@@ -7,12 +8,19 @@ const Search = styled.form`
   justify-content: space-between; 
   align-items: center; 
 `
+
+
 class SearchBox extends Component {
+
+  static propTypes = {
+    onClick: PropTypes.func
+    // .isrequired
+  } 
   render() {
     return (
       <Search>
-        <input type="text" class="search" placeholder="Ingredient, Titles"/>
-        <input type="submit" value="🔎"/>
+        <input type="text" placeholder="Ingredient, Recipe Name"/>
+        <input type="submit" value="🔎" onClick={this.props.onClick}/>
       </Search>  
     );
   }

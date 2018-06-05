@@ -3,7 +3,6 @@
 exports[`<FullRecipe /> should match default snapshot 1`] = `
 <article
   className="sc-bdVaJa flGKDD"
-  onClick={undefined}
 >
   <h1>
     Lemon Cheese Cake
@@ -38,9 +37,19 @@ exports[`<FullRecipe /> should match default snapshot 1`] = `
     src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"
   />
   <img
-    alt="starred"
+    alt="not starred"
     className="sc-bxivhb kCAVYV"
     src="EmptyStar.svg"
   />
+  <button
+    onClick={undefined}
+  >
+    <span
+      aria-label="exit-button"
+      role="img"
+    >
+      ❌
+    </span>
+  </button>
 </article>
 `;

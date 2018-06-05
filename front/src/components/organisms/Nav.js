@@ -12,7 +12,6 @@ const NavBar = styled.nav`
 
 `;
 
-
 export default class Nav extends Component {
   render() {
     return (

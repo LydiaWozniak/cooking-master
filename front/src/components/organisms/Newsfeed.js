@@ -4,7 +4,7 @@ import RecipePreview from '../molecules/RecipePreview.js';
 import FullRecipe from '../molecules/FullRecipe.js'; 
 import recipes from '../../assets/recipes.json'; 
 
-const Container = styled.div`
+const Container = styled.article`
 	background: #FFFFFF; 
 	border: 2px solid #635155;
 	border-radius: 5px; 
@@ -12,12 +12,22 @@ const Container = styled.div`
 `;
 
 export default class Newsfeed extends Component {
+
+	// function findMatches(wordToMatch, recipes) {
+	// 	return recipes.filter(place => {
+	// 		//figure out if name or ingredients matches input
+	// 		const regex = new RegExp(wordToMatch, 'gi'); //g searches globally, i means insensitive
+	// 		return recipe.name.match(regex) || recipe.ingredients.match(regex);
+	// 	});
+	// }
+
+	// recipes = findMatches(this.value, recipes);//inside sumbit button of search box?
+
 	state = {
 		openedRecipe: null 
 	}
 
 		handleExpandClick = (key) => {
-			console.log(this)
 			this.setState({openedRecipe: key});
 		}
 
@@ -41,13 +51,11 @@ export default class Newsfeed extends Component {
 								/>
 							) : (
 								<RecipePreview
-									onClick={() => this.handleExpandClick(key)}
+								 	onClick={() => this.handleExpandClick(key)}
 									key={key}
 									name={recipe.name} 
-									mainIngredients={recipe.mainIngredients} 
-									cookingTime={recipe.cookingTime}
 									image={recipe.image}
-								/> 
+								/>
 							) 
 						))} 
 					</Container>   
