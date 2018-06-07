@@ -13,11 +13,16 @@ const NavBar = styled.nav`
 `;
 
 export default class Nav extends Component {
+
   render() {
     return (
       <NavBar>
         <Filters />
-        <SearchBox /> 
+        <SearchBox 
+          onSubmit={this.props.onSubmit}
+          value={this.props.value}
+          onChange={this.props.onChange}
+         /> 
       </NavBar>   
     )
   }

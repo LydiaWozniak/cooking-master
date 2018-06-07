@@ -51,7 +51,7 @@ export default class Newsfeed extends Component {
 								/>
 							) : (
 								<RecipePreview
-								 	onClick={() => this.handleExpandClick(key)}
+									onClick={() => this.handleExpandClick(key)}
 									key={key}
 									name={recipe.name} 
 									image={recipe.image}

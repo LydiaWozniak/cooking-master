@@ -13,14 +13,16 @@ const Search = styled.form`
 class SearchBox extends Component {
 
   static propTypes = {
-    onClick: PropTypes.func
-    // .isrequired
+    onSubmit: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
+    value: PropTypes.string
   } 
+
   render() {
     return (
-      <Search>
-        <input type="text" placeholder="Ingredient, Recipe Name"/>
-        <input type="submit" value="🔎" onClick={this.props.onClick}/>
+      <Search onSubmit={this.props.onSubmit}>
+        <input type="text" value={this.props.value} onChange={this.props.onChange} placeholder="Ingredient, Recipe Name"/>
+        <input type="submit" value="Submit"/>
       </Search>  
     );
   }

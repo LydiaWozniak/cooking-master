@@ -45,7 +45,7 @@ class FullRecipe extends Component {
       name: PropTypes.string.isRequired
     })).isRequired,
     image: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
   }
 
   render() {
