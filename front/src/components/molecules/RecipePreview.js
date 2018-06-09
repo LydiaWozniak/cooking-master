@@ -53,17 +53,18 @@ class RecipePreview extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired
+    onClick: PropTypes.func.isRequired,
   }
 
   render() {
     return (
-      <RecipeContents onClick={this.props.onClick}>
+      <RecipeContents>
         <List>
           <li><h1>{this.props.name}</h1></li>
         </List>   
         <Image src={this.props.image} alt={this.props.name}/> 
         <Starred src={emptystar} alt="starred"/>
+        <button onClick={this.props.onClick}> Click to expand </button>
       </RecipeContents>  
         
     );

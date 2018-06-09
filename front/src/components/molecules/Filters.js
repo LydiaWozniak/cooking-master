@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import star from '../atoms/Star.svg';
 
@@ -21,14 +22,20 @@ const Starred = styled.img`
   height: 20px;
 `;
 
-
-
 class Filters extends Component {
+
+  static propTypes = {
+    onChange: PropTypes.func.isRequired,
+  }
+
+  filterAll = () => this.props.onChange('all'); 
+  filterStarred = () => this.props.onChange('starred'); 
+
   render() {
     return (
       <List>
-          <Item>All</Item>
-          <Item><Starred src={star} alt="starred"/></Item>
+          <Item onClick={this.filterAll}>All</Item>
+          <Item><Starred onClick={this.filterStarred} src={star} alt="starred"/></Item>
       </List>   
         
     );

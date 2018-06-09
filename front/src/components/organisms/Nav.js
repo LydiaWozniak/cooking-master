@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Filters from '../molecules/Filters.js'; 
 import SearchBox from '../molecules/SearchBox.js'
@@ -14,15 +15,16 @@ const NavBar = styled.nav`
 
 export default class Nav extends Component {
 
+  static propTypes = {
+    filtersOnChange: PropTypes.func.isRequired,
+    searchOnChange: PropTypes.func.isRequired,
+  }
+
   render() {
     return (
       <NavBar>
-        <Filters />
-        <SearchBox 
-          onSubmit={this.props.onSubmit}
-          value={this.props.value}
-          onChange={this.props.onChange}
-         /> 
+        <Filters onChange={this.props.filtersOnChange} />
+        <SearchBox onChange={this.props.searchOnChange} /> 
       </NavBar>   
     )
   }
