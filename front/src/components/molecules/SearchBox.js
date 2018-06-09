@@ -13,15 +13,27 @@ const Search = styled.form`
 class SearchBox extends Component {
 
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired,
     onChange: PropTypes.func.isRequired,
-    value: PropTypes.string
-  } 
+  }
+
+  state = {
+    search: ''
+  };
+
+  handleSubmit = (event) => {
+    this.props.onChange(this.state.search);
+    event.preventDefault(); 
+
+  }
+
+  handleChange = (event) => {
+    this.setState({search: event.target.value});
+  }
 
   render() {
     return (
-      <Search onSubmit={this.props.onSubmit}>
-        <input type="text" value={this.props.value} onChange={this.props.onChange} placeholder="Ingredient, Recipe Name"/>
+      <Search onSubmit={this.handleSubmit}>
+        <input type="text" onChange={this.handleChange} placeholder="Ingredient, Recipe Name"/>
         <input type="submit" value="Submit"/>
       </Search>  
     );

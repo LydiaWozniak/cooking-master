@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import RecipePreview from '../molecules/RecipePreview.js'; 
 import FullRecipe from '../molecules/FullRecipe.js'; 
@@ -13,58 +14,62 @@ const Container = styled.article`
 
 export default class Newsfeed extends Component {
 
-	// function findMatches(wordToMatch, recipes) {
-	// 	return recipes.filter(place => {
-	// 		//figure out if name or ingredients matches input
-	// 		const regex = new RegExp(wordToMatch, 'gi'); //g searches globally, i means insensitive
-	// 		return recipe.name.match(regex) || recipe.ingredients.match(regex);
-	// 	});
-	// }
-
-	// recipes = findMatches(this.value, recipes);//inside sumbit button of search box?
-
-	state = {
-		openedRecipe: null 
+	static propTypes = {
+		filter: PropTypes.oneOf(['all', 'starred']),
+		search: PropTypes.string
 	}
 
-		handleExpandClick = (key) => {
-			this.setState({openedRecipe: key});
-		}
+	static defaultProps = {
+		filter: 'all',
+		search: ''
+	}
 
-		handleCollapseClick = (key) => {
-			this.setState({openedRecipe: null});
-		}
+	state = {
+		openedRecipe: null, 
+	}
+
+	getFilteredRecipes = () => recipes
+		.filter(recipe => this.props.filter === 'all' || recipe.star)
+		.filter(recipe => this.props.search === '' || this.props.search.toLowerCase() === recipe.name.toLowerCase())
+
+	handleExpandClick = (key) => {
+		this.setState({openedRecipe: key});
+	}
+
+	handleCollapseClick = (key) => {
+		this.setState({openedRecipe: null});
+	}
 		
-		render() {
-			const display = (
-				<div>
-					<Container>
-						{Object.entries(recipes).map(([key, recipe]) => (
-							key === this.state.openedRecipe ? (
-								<FullRecipe
-									onClick={() => this.handleCollapseClick(key)}
-									key={key}
-									name={recipe.name} 
-									cookingTime={recipe.cookingTime}
-									ingredients={recipe.ingredients} 
-									image={recipe.image}
-								/>
-							) : (
-								<RecipePreview
-									onClick={() => this.handleExpandClick(key)}
-									key={key}
-									name={recipe.name} 
-									image={recipe.image}
-								/>
-							) 
-						))} 
-					</Container>   
-				</div>
-			 )
-			return (
+	render() {
+		const display = (
 			<div>
-				{display}
+				<Container>
+					{Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => (
+						key === this.state.openedRecipe ? (
+							<FullRecipe
+								onClick={() => this.handleCollapseClick(key)}
+								key={key}
+								name={recipe.name} 
+								cookingTime={recipe.cookingTime}
+								ingredients={recipe.ingredients} 
+								image={recipe.image}
+							/>
+						) : (
+							<RecipePreview
+								onClick={() => this.handleExpandClick(key)}
+								key={key}
+								name={recipe.name} 
+								image={recipe.image}
+							/>
+						) 
+					))} 
+				</Container>   
 			</div>
 			)
-		}
+		return (
+		<div>
+			{display}
+		</div>
+		)
+	}
 }
