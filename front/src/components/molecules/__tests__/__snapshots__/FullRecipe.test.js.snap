@@ -2,13 +2,13 @@
 
 exports[`<FullRecipe /> should match default snapshot 1`] = `
 <article
-  className="sc-bwzfXH dRdtJq"
+  className="sc-bxivhb jXruiR"
 >
   <h1>
     Lemon Cheese Cake
   </h1>
   <ul
-    className="sc-htpNat fPNvhp"
+    className="sc-ifAKCX bbyWFJ"
   >
     <li>
       <h3>
@@ -33,16 +33,16 @@ exports[`<FullRecipe /> should match default snapshot 1`] = `
   </ul>
   <img
     alt="Lemon Cheese Cake"
-    className="sc-bxivhb fMRhQA"
+    className="sc-EHOje bhjIfj"
     src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"
   />
   <button
     className="sc-bdVaJa iLpejz"
     onClick={undefined}
   >
-    <img
-      alt="favorite Recipe"
-      src="Star.svg"
+    <div
+      alt="not a favorite Recipe"
+      className="sc-htpNat elORsY"
     />
   </button>
   <button

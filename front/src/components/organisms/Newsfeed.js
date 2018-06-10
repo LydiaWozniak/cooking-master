@@ -28,7 +28,7 @@ export default class Newsfeed extends Component {
 		openedRecipe: null, 
 		starred: [], 
 	}
-
+	//lifecycle methods
 	componentWillReceiveProps(nextProps) {
 		this.handleCollapseClick(this.state.openedRecipe);
 	}
@@ -44,6 +44,8 @@ export default class Newsfeed extends Component {
 			recipe.mainIngredients.some(ingredient => ingredient.match(new RegExp(this.props.search, 'gi'))) ||
 			recipe.ingredients.some(({name}) => name.match(new RegExp(this.props.search, 'gi')))
 		);
+
+	starred = recipe => this.state.starred.some(item => item === recipe);
 
 	handleExpandClick = (key) => {
 		this.setState({openedRecipe: key});
@@ -74,7 +76,7 @@ export default class Newsfeed extends Component {
 								ingredients={recipe.ingredients} 
 								image={recipe.image}
 								starOnChange={() => this.toggleStarred(recipe)}
-
+								starred={this.starred(recipe)}
 							/>
 						) : (
 							<RecipePreview
@@ -83,6 +85,7 @@ export default class Newsfeed extends Component {
 								name={recipe.name} 
 								image={recipe.image}
 								starOnChange={() => this.toggleStarred(recipe)}
+								starred={this.starred(recipe)}
 							/>
 						) 
 					))} 
