@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Newsfeed /> should match default snapshot 1`] = `
+<div>
+  <div>
+    <article
+      className="sc-gzVnrw jQxlby"
+    >
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Lemon Chicken
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Lemon Chicken"
+          className="sc-bxivhb QjEBN"
+          src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Beef Stroganoff
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Beef Stroganoff"
+          className="sc-bxivhb QjEBN"
+          src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Ceasar Salad
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Ceasar Salad"
+          className="sc-bxivhb QjEBN"
+          src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Chicken Ceasar Salad
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Chicken Ceasar Salad"
+          className="sc-bxivhb QjEBN"
+          src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`<Newsfeed /> should match snapshot when filtering by an ingredient name 1`] = `
+<div>
+  <div>
+    <article
+      className="sc-gzVnrw jQxlby"
+    >
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Lemon Chicken
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Lemon Chicken"
+          className="sc-bxivhb QjEBN"
+          src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Chicken Ceasar Salad
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Chicken Ceasar Salad"
+          className="sc-bxivhb QjEBN"
+          src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`<Newsfeed /> should match snapshot when filtering by full recipe name 1`] = `
+<div>
+  <div>
+    <article
+      className="sc-gzVnrw jQxlby"
+    >
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Beef Stroganoff
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Beef Stroganoff"
+          className="sc-bxivhb QjEBN"
+          src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`<Newsfeed /> should match snapshot when filtering by mainIngredient of recipe 1`] = `
+<div>
+  <div>
+    <article
+      className="sc-gzVnrw jQxlby"
+    >
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Beef Stroganoff
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Beef Stroganoff"
+          className="sc-bxivhb QjEBN"
+          src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`<Newsfeed /> should match snapshot when filtering by match of recipe name 1`] = `
+<div>
+  <div>
+    <article
+      className="sc-gzVnrw jQxlby"
+    >
+      <article
+        className="sc-bwzfXH dcGIz"
+      >
+        <ul
+          className="sc-htpNat fPNvhp"
+        >
+          <li>
+            <h1>
+              Beef Stroganoff
+            </h1>
+          </li>
+        </ul>
+        <img
+          alt="Beef Stroganoff"
+          className="sc-bxivhb QjEBN"
+          src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
+        />
+        <button
+          className="sc-bdVaJa iLpejz"
+          onClick={[Function]}
+        >
+          <img
+            alt="favorite Recipe"
+            src="Star.svg"
+          />
+        </button>
+        <button
+          onClick={[Function]}
+        >
+           Click to expand 
+        </button>
+      </article>
+    </article>
+  </div>
+</div>
+`;

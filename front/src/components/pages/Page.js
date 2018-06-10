@@ -23,7 +23,6 @@ class Page extends Component {
   handleSearchOnChange = (search) => {
     this.setState({search})
     this.setState({filter : 'all'})
-
   }
 
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import emptystar from '../atoms/EmptyStar.svg';
+import StarButton from './StarButton';
 
 const RecipeContents = styled.article`
   display: flex; 
@@ -24,13 +24,6 @@ const Image = styled.img`
   align-self: center; 
 `;
 
-const Starred = styled.img`
-  height: 20px;
-  align-self: center; 
-  &:hover {
-    background: #635155;
-  }
-`;
 
 class FullRecipe extends Component {
 
@@ -45,8 +38,10 @@ class FullRecipe extends Component {
       name: PropTypes.string.isRequired
     })).isRequired,
     image: PropTypes.string.isRequired,
+    starOnChange: PropTypes.func,
     onClick: PropTypes.func,
   }
+
 
   render() {
     return (
@@ -59,7 +54,7 @@ class FullRecipe extends Component {
             ))}
           </List> 
         <Image src={this.props.image} alt={this.props.name}/> 
-        <Starred src={emptystar} alt="not starred"/>
+        <StarButton starOnChange={this.props.starOnChange} />
         <button onClick={this.props.onClick}><span role='img' aria-label="exit-button">❌</span></button>
       </RecipeContents>  
         
