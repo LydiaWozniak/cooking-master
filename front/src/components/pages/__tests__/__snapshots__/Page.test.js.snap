@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> should match default snapshot 1`] = `
+<div
+  className="sc-kpOJdX gYvxyg"
+>
+  <header
+    className="sc-bdVaJa kLCyua"
+  >
+    <h1>
+      Cooking Master
+      <div
+        className="sc-bwzfXH bBScxE"
+      >
+        <span
+          aria-label="chef"
+          role="img"
+        >
+          👩🏻‍🍳
+        </span>
+      </div>
+    </h1>
+  </header>
+  <nav
+    className="sc-gzVnrw ebYmzc"
+  >
+    <ul
+      className="sc-htpNat dMshuV"
+    >
+      <li
+        className="sc-bxivhb jbfCJm"
+        onClick={[Function]}
+      >
+        <span
+          className="sc-ifAKCX kYeoyA"
+        >
+          All
+        </span>
+      </li>
+      <li
+        className="sc-bxivhb jbfCJm"
+      >
+        <img
+          alt="starred"
+          className="sc-EHOje gAKosP"
+          onClick={[Function]}
+          src="Star.svg"
+        />
+      </li>
+    </ul>
+    <form
+      className="sc-bZQynM dKMWjK"
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Ingredient, Recipe Name"
+        type="text"
+      />
+      <input
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </nav>
+  <div>
+    <div>
+      <article
+        className="sc-kgoBCf dDgnkr"
+      >
+        <article
+          className="sc-gZMcBi inwnNL"
+        >
+          <div
+            className="sc-gqjmRU ljbwMe"
+          >
+            <h1>
+              Lemon Chicken
+            </h1>
+            <button
+              className="sc-htoDjs bIWntg"
+              onClick={[Function]}
+            >
+              <img
+                alt="not a favorite Recipe"
+                className="sc-iwsKbI jQAyFz"
+                src="EmptyStar.svg"
+              />
+            </button>
+          </div>
+          <img
+            alt="Lemon Chicken"
+            className="sc-VigVT jyPryD"
+            src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
+          />
+          <button
+            className="sc-jTzLTM bsoPaI"
+            onClick={[Function]}
+          >
+            Click to see more
+          </button>
+        </article>
+        <article
+          className="sc-gZMcBi inwnNL"
+        >
+          <div
+            className="sc-gqjmRU ljbwMe"
+          >
+            <h1>
+              Beef Stroganoff
+            </h1>
+            <button
+              className="sc-htoDjs bIWntg"
+              onClick={[Function]}
+            >
+              <img
+                alt="not a favorite Recipe"
+                className="sc-iwsKbI jQAyFz"
+                src="EmptyStar.svg"
+              />
+            </button>
+          </div>
+          <img
+            alt="Beef Stroganoff"
+            className="sc-VigVT jyPryD"
+            src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
+          />
+          <button
+            className="sc-jTzLTM bsoPaI"
+            onClick={[Function]}
+          >
+            Click to see more
+          </button>
+        </article>
+        <article
+          className="sc-gZMcBi inwnNL"
+        >
+          <div
+            className="sc-gqjmRU ljbwMe"
+          >
+            <h1>
+              Ceasar Salad
+            </h1>
+            <button
+              className="sc-htoDjs bIWntg"
+              onClick={[Function]}
+            >
+              <img
+                alt="not a favorite Recipe"
+                className="sc-iwsKbI jQAyFz"
+                src="EmptyStar.svg"
+              />
+            </button>
+          </div>
+          <img
+            alt="Ceasar Salad"
+            className="sc-VigVT jyPryD"
+            src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
+          />
+          <button
+            className="sc-jTzLTM bsoPaI"
+            onClick={[Function]}
+          >
+            Click to see more
+          </button>
+        </article>
+        <article
+          className="sc-gZMcBi inwnNL"
+        >
+          <div
+            className="sc-gqjmRU ljbwMe"
+          >
+            <h1>
+              Chicken Ceasar Salad
+            </h1>
+            <button
+              className="sc-htoDjs bIWntg"
+              onClick={[Function]}
+            >
+              <img
+                alt="not a favorite Recipe"
+                className="sc-iwsKbI jQAyFz"
+                src="EmptyStar.svg"
+              />
+            </button>
+          </div>
+          <img
+            alt="Chicken Ceasar Salad"
+            className="sc-VigVT jyPryD"
+            src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
+          />
+          <button
+            className="sc-jTzLTM bsoPaI"
+            onClick={[Function]}
+          >
+            Click to see more
+          </button>
+        </article>
+      </article>
+    </div>
+  </div>
+  <footer
+    className="sc-kGXeez hKHqjx"
+  >
+    Made by 
+    Lydia
+  </footer>
+</div>
+`;
