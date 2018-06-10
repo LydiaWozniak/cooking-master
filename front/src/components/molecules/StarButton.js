@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import EmptyStar from '../atoms/EmptyStar.svg';
-import Star from '../atoms/Star.svg';
+// import EmptyStar from '../atoms/EmptyStar.svg';
+// import Star from '../atoms/Star.svg';
 
 
 const StarredButton = styled.button`
@@ -11,27 +11,32 @@ const StarredButton = styled.button`
   }
 `;
 
+const FilledStar = styled.div`
+  background: red;
+  `
+const Star = styled.div`
+background: green;
+`
 
 class StarButton extends Component {
 
+  static defaultProps = {
+		starred: false, 
+	}
+
   static propTypes = {
     starOnChange: PropTypes.func,
-    starred: PropTypes.array.isRequired,
+    starred: PropTypes.bool
     // className: PropTypes.string.isRequired,
   }
-
-  //PropTypes are prop definitions, default is what value it gets if not given
-  static defaultProps = { 
-    starred: []
-  };
 
   render() {
     return (
       <StarredButton onClick={this.props.starOnChange}>
-        {this.props.starred ? 
-          (<img src={Star} alt='favorite Recipe'/>):
-          (<img src={EmptyStar} alt='not a favorite Recipe'/>)
-          } 
+        {(this.props.starred) ? 
+          (<FilledStar alt='favorite Recipe'/>):
+          (<Star alt='not a favorite Recipe'/>)
+        }
       </StarredButton>
 
     );

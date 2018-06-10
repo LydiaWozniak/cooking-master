@@ -27,6 +27,10 @@ const Image = styled.img`
 
 class FullRecipe extends Component {
 
+  static defaultProps = {
+		starred: false, 
+	}
+
   static propTypes = {
     name: PropTypes.string.isRequired,
     cookingTime: PropTypes.string.isRequired,
@@ -40,6 +44,7 @@ class FullRecipe extends Component {
     image: PropTypes.string.isRequired,
     starOnChange: PropTypes.func,
     onClick: PropTypes.func,
+    starred: PropTypes.bool, 
   }
 
 
@@ -54,7 +59,7 @@ class FullRecipe extends Component {
             ))}
           </List> 
         <Image src={this.props.image} alt={this.props.name}/> 
-        <StarButton starOnChange={this.props.starOnChange} />
+        <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />
         <button onClick={this.props.onClick}><span role='img' aria-label="exit-button">❌</span></button>
       </RecipeContents>  
         

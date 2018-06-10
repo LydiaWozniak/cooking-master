@@ -4,13 +4,13 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
 <div>
   <div>
     <article
-      className="sc-gzVnrw jQxlby"
+      className="sc-dnqmqq cVyUAK"
     >
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -20,16 +20,16 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
         </ul>
         <img
           alt="Lemon Chicken"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button
@@ -39,10 +39,10 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
         </button>
       </article>
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -52,16 +52,16 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
         </ul>
         <img
           alt="Beef Stroganoff"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button
@@ -71,10 +71,10 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
         </button>
       </article>
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -84,16 +84,16 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
         </ul>
         <img
           alt="Ceasar Salad"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button
@@ -103,10 +103,10 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
         </button>
       </article>
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -116,16 +116,16 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
         </ul>
         <img
           alt="Chicken Ceasar Salad"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button
@@ -143,13 +143,13 @@ exports[`<Newsfeed /> should match snapshot when filtering by an ingredient name
 <div>
   <div>
     <article
-      className="sc-gzVnrw jQxlby"
+      className="sc-dnqmqq cVyUAK"
     >
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -159,16 +159,16 @@ exports[`<Newsfeed /> should match snapshot when filtering by an ingredient name
         </ul>
         <img
           alt="Lemon Chicken"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button
@@ -178,10 +178,10 @@ exports[`<Newsfeed /> should match snapshot when filtering by an ingredient name
         </button>
       </article>
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -191,16 +191,16 @@ exports[`<Newsfeed /> should match snapshot when filtering by an ingredient name
         </ul>
         <img
           alt="Chicken Ceasar Salad"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button
@@ -218,13 +218,13 @@ exports[`<Newsfeed /> should match snapshot when filtering by full recipe name 1
 <div>
   <div>
     <article
-      className="sc-gzVnrw jQxlby"
+      className="sc-dnqmqq cVyUAK"
     >
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -234,16 +234,16 @@ exports[`<Newsfeed /> should match snapshot when filtering by full recipe name 1
         </ul>
         <img
           alt="Beef Stroganoff"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button
@@ -261,13 +261,13 @@ exports[`<Newsfeed /> should match snapshot when filtering by mainIngredient of 
 <div>
   <div>
     <article
-      className="sc-gzVnrw jQxlby"
+      className="sc-dnqmqq cVyUAK"
     >
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -277,16 +277,16 @@ exports[`<Newsfeed /> should match snapshot when filtering by mainIngredient of 
         </ul>
         <img
           alt="Beef Stroganoff"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button
@@ -304,13 +304,13 @@ exports[`<Newsfeed /> should match snapshot when filtering by match of recipe na
 <div>
   <div>
     <article
-      className="sc-gzVnrw jQxlby"
+      className="sc-dnqmqq cVyUAK"
     >
       <article
-        className="sc-bwzfXH dcGIz"
+        className="sc-bxivhb eCmjqu"
       >
         <ul
-          className="sc-htpNat fPNvhp"
+          className="sc-ifAKCX bbyWFJ"
         >
           <li>
             <h1>
@@ -320,16 +320,16 @@ exports[`<Newsfeed /> should match snapshot when filtering by match of recipe na
         </ul>
         <img
           alt="Beef Stroganoff"
-          className="sc-bxivhb QjEBN"
+          className="sc-EHOje iAIPz"
           src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
         />
         <button
           className="sc-bdVaJa iLpejz"
           onClick={[Function]}
         >
-          <img
-            alt="favorite Recipe"
-            src="Star.svg"
+          <div
+            alt="not a favorite Recipe"
+            className="sc-htpNat elORsY"
           />
         </button>
         <button

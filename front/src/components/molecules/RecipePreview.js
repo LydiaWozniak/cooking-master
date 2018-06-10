@@ -41,11 +41,16 @@ const Image = styled.img`
 
 class RecipePreview extends Component {
 
+  static defaultProps = {
+		starred: false, 
+	}
+
   static propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
     starOnChange: PropTypes.func, 
+    starred: PropTypes.bool, 
   }
 
   render() {
@@ -55,7 +60,7 @@ class RecipePreview extends Component {
           <li><h1>{this.props.name}</h1></li>
         </List>   
         <Image src={this.props.image} alt={this.props.name}/> 
-        <StarButton starOnChange={this.props.starOnChange} />
+        <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />
         <button onClick={this.props.onClick}> Click to expand </button>
       </RecipeContents>  
         
