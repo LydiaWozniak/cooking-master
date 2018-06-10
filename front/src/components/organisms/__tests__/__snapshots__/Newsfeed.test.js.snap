@@ -4,142 +4,134 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
 <div>
   <div>
     <article
-      className="sc-gZMcBi FWqLh"
+      className="sc-gqjmRU kRDSPQ"
     >
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Lemon Chicken
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Lemon Chicken
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Lemon Chicken"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Beef Stroganoff
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Beef Stroganoff
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Beef Stroganoff"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Ceasar Salad
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Ceasar Salad
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Ceasar Salad"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Chicken Ceasar Salad
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Chicken Ceasar Salad
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Chicken Ceasar Salad"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
     </article>
@@ -151,74 +143,70 @@ exports[`<Newsfeed /> should match snapshot when filtering by an ingredient name
 <div>
   <div>
     <article
-      className="sc-gZMcBi FWqLh"
+      className="sc-gqjmRU kRDSPQ"
     >
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Lemon Chicken
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Lemon Chicken
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Lemon Chicken"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Chicken Ceasar Salad
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Chicken Ceasar Salad
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Chicken Ceasar Salad"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
     </article>
@@ -230,40 +218,38 @@ exports[`<Newsfeed /> should match snapshot when filtering by full recipe name 1
 <div>
   <div>
     <article
-      className="sc-gZMcBi FWqLh"
+      className="sc-gqjmRU kRDSPQ"
     >
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Beef Stroganoff
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Beef Stroganoff
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Beef Stroganoff"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
     </article>
@@ -275,40 +261,38 @@ exports[`<Newsfeed /> should match snapshot when filtering by mainIngredient of 
 <div>
   <div>
     <article
-      className="sc-gZMcBi FWqLh"
+      className="sc-gqjmRU kRDSPQ"
     >
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Beef Stroganoff
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Beef Stroganoff
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Beef Stroganoff"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
     </article>
@@ -320,40 +304,38 @@ exports[`<Newsfeed /> should match snapshot when filtering by match of recipe na
 <div>
   <div>
     <article
-      className="sc-gZMcBi FWqLh"
+      className="sc-gqjmRU kRDSPQ"
     >
       <article
-        className="sc-bxivhb eCmjqu"
+        className="sc-bxivhb daAlAn"
       >
-        <ul
-          className="sc-ifAKCX bbyWFJ"
+        <div
+          className="sc-ifAKCX bVBcEN"
         >
-          <li>
-            <h1>
-              Beef Stroganoff
-            </h1>
-          </li>
-        </ul>
+          <h1>
+            Beef Stroganoff
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
         <img
           alt="Beef Stroganoff"
-          className="sc-EHOje iAIPz"
+          className="sc-EHOje kqKSJf"
           src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
         />
         <button
-          className="sc-bdVaJa fDYnfT"
+          className="sc-bZQynM cTqsEb"
           onClick={[Function]}
         >
-          <img
-            alt="not a favorite Recipe"
-            className="sc-htpNat FpryX"
-            src="EmptyStar.svg"
-          />
-        </button>
-        <button
-          className="sc-bZQynM IgrOP"
-          onClick={[Function]}
-        >
-           Click to expand 
+          Click to see more
         </button>
       </article>
     </article>

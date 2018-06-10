@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Header, Nav, Newsfeed } from '../organisms';
+import { Header, Nav, Newsfeed, Footer } from '../organisms';
 
 const Main = styled.div`
   background: #FFFFFF; 
   display: flex;
   flex-direction: column; 
+  font-family: 'Roboto', sans-serif;
 `;
 
 class Page extends Component {
@@ -36,6 +37,9 @@ class Page extends Component {
         <Newsfeed 
           filter={this.state.filter}
           search={this.state.search}
+        />
+        <Footer
+          name='Lydia'
         />
       </Main>
     );

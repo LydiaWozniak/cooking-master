@@ -13,11 +13,18 @@ const List = styled.ul`
 const Item = styled.li`
   margin-left: 1em; 
   list-style-type: none; 
-
   &:hover {
-  background: #635155;
+    transform: scale(1.5);
 }
 `;
+
+const All = styled.span`
+  &:hover {
+    background: #635155;
+    color: white; 
+}
+`;
+
 const Starred = styled.img`
   height: 20px;
 `;
@@ -34,7 +41,7 @@ class Filters extends Component {
   render() {
     return (
       <List>
-          <Item onClick={this.filterAll}>All</Item>
+          <Item onClick={this.filterAll}><All>All</All></Item>
           <Item><Starred onClick={this.filterStarred} src={star} alt="starred"/></Item>
       </List>   
         

@@ -4,24 +4,37 @@ import styled from 'styled-components';
 import StarButton from './StarButton';
 
 const RecipeContents = styled.article`
+  background: white; 
   display: flex; 
+  flex-direction: column; 
   flex-wrap: nowrap;
   justify-content: space-evenly; 
-  align-content: center;  
-  border: 2px solid #635155;
+  align-self: center; 
+  align-items: center; 
+  border: 2px solid #c9c5c6;
+  border-radius: 5px; 
+  padding: 0 0 5% 0 ; 
   margin: 5%; 
+  width: 90%; 
   box-sizing: border-box;
 `;
 
-const List = styled.ul`
-  list-style-type: none;
+const Image = styled.img`
+  width: 60%;
+  height: auto;
   align-self: center; 
 `;
 
-const Image = styled.img`
-  height: 200px;
-  width: 200px;
-  align-self: center; 
+const List = styled.ul`
+  text-decoration: none; 
+  list-style-type: none;
+`;
+
+const TitleBlock = styled.div`
+  font-size: 1.5em; 
+  display: flex; 
+  width: 100%; 
+  justify-content: space-around; 
 `;
 
 const Exit = styled.button`
@@ -33,6 +46,11 @@ const Exit = styled.button`
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  align-self: flex-end; 
+  margin: 2%; 
+  &:hover{
+      transform: scale(1.5);
+    }
 `; 
 
 class FullRecipe extends Component {
@@ -61,17 +79,18 @@ class FullRecipe extends Component {
   render() {
     return (
       <RecipeContents>
-          <h1>{this.props.name}</h1>
-          <List>
-            <li><h3>Cooking Time: {this.props.cookingTime}</h3></li>
-            <h3>Ingredients:</h3>
+          <Exit onClick={this.props.onClick}><span role='img' aria-label="exit-button">❌</span></Exit>
+          <TitleBlock>
+            <h1>{this.props.name}</h1>
+            <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />
+          </TitleBlock>
+          <Image src={this.props.image} alt={this.props.name}/> 
+          <h3>Cooking Time: {this.props.cookingTime}</h3>
+          <List><h3>To make this recipe at home, you will need:</h3> 
             {this.props.ingredients.map(({quantity, name}) => (
-              <li key={name}>{quantity} of {name}</li>  
+              <li key={name}>{quantity} {name}</li>
             ))}
           </List> 
-        <Image src={this.props.image} alt={this.props.name}/> 
-        <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />
-        <Exit onClick={this.props.onClick}><span role='img' aria-label="exit-button">❌</span></Exit>
       </RecipeContents>  
         
     );
