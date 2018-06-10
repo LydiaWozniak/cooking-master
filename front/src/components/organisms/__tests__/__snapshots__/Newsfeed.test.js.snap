@@ -139,6 +139,145 @@ exports[`<Newsfeed /> should match default snapshot 1`] = `
 </div>
 `;
 
+exports[`<Newsfeed /> should match snapshot when filtering by All recipes 1`] = `
+<div>
+  <div>
+    <article
+      className="sc-gqjmRU kRDSPQ"
+    >
+      <article
+        className="sc-bxivhb daAlAn"
+      >
+        <div
+          className="sc-ifAKCX bVBcEN"
+        >
+          <h1>
+            Lemon Chicken
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
+        <img
+          alt="Lemon Chicken"
+          className="sc-EHOje kqKSJf"
+          src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
+        />
+        <button
+          className="sc-bZQynM cTqsEb"
+          onClick={[Function]}
+        >
+          Click to see more
+        </button>
+      </article>
+      <article
+        className="sc-bxivhb daAlAn"
+      >
+        <div
+          className="sc-ifAKCX bVBcEN"
+        >
+          <h1>
+            Beef Stroganoff
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
+        <img
+          alt="Beef Stroganoff"
+          className="sc-EHOje kqKSJf"
+          src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
+        />
+        <button
+          className="sc-bZQynM cTqsEb"
+          onClick={[Function]}
+        >
+          Click to see more
+        </button>
+      </article>
+      <article
+        className="sc-bxivhb daAlAn"
+      >
+        <div
+          className="sc-ifAKCX bVBcEN"
+        >
+          <h1>
+            Ceasar Salad
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
+        <img
+          alt="Ceasar Salad"
+          className="sc-EHOje kqKSJf"
+          src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
+        />
+        <button
+          className="sc-bZQynM cTqsEb"
+          onClick={[Function]}
+        >
+          Click to see more
+        </button>
+      </article>
+      <article
+        className="sc-bxivhb daAlAn"
+      >
+        <div
+          className="sc-ifAKCX bVBcEN"
+        >
+          <h1>
+            Chicken Ceasar Salad
+          </h1>
+          <button
+            className="sc-bdVaJa fDYnfT"
+            onClick={[Function]}
+          >
+            <img
+              alt="not a favorite Recipe"
+              className="sc-htpNat dUtRtU"
+              src="EmptyStar.svg"
+            />
+          </button>
+        </div>
+        <img
+          alt="Chicken Ceasar Salad"
+          className="sc-EHOje kqKSJf"
+          src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
+        />
+        <button
+          className="sc-bZQynM cTqsEb"
+          onClick={[Function]}
+        >
+          Click to see more
+        </button>
+      </article>
+    </article>
+  </div>
+</div>
+`;
+
 exports[`<Newsfeed /> should match snapshot when filtering by an ingredient name 1`] = `
 <div>
   <div>
@@ -339,6 +478,16 @@ exports[`<Newsfeed /> should match snapshot when filtering by match of recipe na
         </button>
       </article>
     </article>
+  </div>
+</div>
+`;
+
+exports[`<Newsfeed /> should match snapshot when filtering by starred recipes 1`] = `
+<div>
+  <div>
+    <article
+      className="sc-gqjmRU kRDSPQ"
+    />
   </div>
 </div>
 `;
