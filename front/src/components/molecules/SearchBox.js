@@ -23,7 +23,6 @@ class SearchBox extends Component {
   handleSubmit = (event) => {
     this.props.onChange(this.state.search);
     event.preventDefault(); 
-
   }
 
   handleChange = (event) => {

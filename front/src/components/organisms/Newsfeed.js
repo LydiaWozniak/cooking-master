@@ -10,7 +10,7 @@ const Container = styled.article`
 	border: 2px solid #635155;
 	border-radius: 5px; 
 	width: 100%; 
-`;
+`; 
 
 export default class Newsfeed extends Component {
 
@@ -21,16 +21,29 @@ export default class Newsfeed extends Component {
 
 	static defaultProps = {
 		filter: 'all',
-		search: ''
+		search: '',
 	}
 
 	state = {
 		openedRecipe: null, 
+		starred: [], 
+	}
+
+	componentWillReceiveProps(nextProps) {
+		this.handleCollapseClick(this.state.openedRecipe);
 	}
 
 	getFilteredRecipes = () => recipes
-		.filter(recipe => this.props.filter === 'all' || recipe.star)
-		.filter(recipe => this.props.search === '' || this.props.search.toLowerCase() === recipe.name.toLowerCase())
+		.filter(recipe =>
+			this.props.filter === 'all' ||
+			this.state.starred.some(item => item === recipe)
+		)
+		.filter(recipe =>
+			this.props.search === '' || 
+			recipe.name.match(new RegExp(this.props.search, 'gi')) ||
+			recipe.mainIngredients.some(ingredient => ingredient.match(new RegExp(this.props.search, 'gi'))) ||
+			recipe.ingredients.some(({name}) => name.match(new RegExp(this.props.search, 'gi')))
+		);
 
 	handleExpandClick = (key) => {
 		this.setState({openedRecipe: key});
@@ -39,6 +52,13 @@ export default class Newsfeed extends Component {
 	handleCollapseClick = (key) => {
 		this.setState({openedRecipe: null});
 	}
+
+	toggleStarred = (key) => {
+		(this.state.starred.find(item => item === key) ? 
+		(this.setState({starred: this.state.starred.filter(i => i !== key)})):
+		(this.setState({starred: this.state.starred.concat([key])})));
+    ; 
+  }
 		
 	render() {
 		const display = (
@@ -53,6 +73,8 @@ export default class Newsfeed extends Component {
 								cookingTime={recipe.cookingTime}
 								ingredients={recipe.ingredients} 
 								image={recipe.image}
+								starOnChange={() => this.toggleStarred(recipe)}
+
 							/>
 						) : (
 							<RecipePreview
@@ -60,6 +82,7 @@ export default class Newsfeed extends Component {
 								key={key}
 								name={recipe.name} 
 								image={recipe.image}
+								starOnChange={() => this.toggleStarred(recipe)}
 							/>
 						) 
 					))} 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import emptystar from '../atoms/EmptyStar.svg';
+import StarButton from './StarButton';
 // import recipes from '../../assets/recipes.json'; 
 
 const RecipeContents = styled.article`
@@ -25,15 +25,6 @@ const Image = styled.img`
   align-self: center; 
 `;
 
-const Starred = styled.img`
-  height: 20px;
-  align-self: center; 
-  &:hover {
-    background: #635155;
-  }
-`;
-
-
 // class Preview extends Component {
 // render() {
 //   return <RecipeContents>
@@ -54,6 +45,7 @@ class RecipePreview extends Component {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
+    starOnChange: PropTypes.func, 
   }
 
   render() {
@@ -63,7 +55,7 @@ class RecipePreview extends Component {
           <li><h1>{this.props.name}</h1></li>
         </List>   
         <Image src={this.props.image} alt={this.props.name}/> 
-        <Starred src={emptystar} alt="starred"/>
+        <StarButton starOnChange={this.props.starOnChange} />
         <button onClick={this.props.onClick}> Click to expand </button>
       </RecipeContents>  
         
