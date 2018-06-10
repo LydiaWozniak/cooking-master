@@ -12,9 +12,13 @@ exports[`<FullRecipe /> should match default snapshot 1`] = `
   >
     <li>
       <h3>
+        Cooking Time: 
         40 minutes
       </h3>
     </li>
+    <h3>
+      Ingredients:
+    </h3>
     <li>
       4
        of 
@@ -37,15 +41,17 @@ exports[`<FullRecipe /> should match default snapshot 1`] = `
     src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"
   />
   <button
-    className="sc-bdVaJa iLpejz"
+    className="sc-bdVaJa fDYnfT"
     onClick={undefined}
   >
-    <div
+    <img
       alt="not a favorite Recipe"
-      className="sc-htpNat elORsY"
+      className="sc-htpNat FpryX"
+      src="EmptyStar.svg"
     />
   </button>
   <button
+    className="sc-bZQynM bMwOlk"
     onClick={undefined}
   >
     <span

@@ -25,6 +25,17 @@ const Image = styled.img`
   align-self: center; 
 `;
 
+const Expand = styled.button`
+  height: 10px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+`;
+
 // class Preview extends Component {
 // render() {
 //   return <RecipeContents>
@@ -61,7 +72,7 @@ class RecipePreview extends Component {
         </List>   
         <Image src={this.props.image} alt={this.props.name}/> 
         <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />
-        <button onClick={this.props.onClick}> Click to expand </button>
+        <Expand onClick={this.props.onClick}> Click to expand </Expand>
       </RecipeContents>  
         
     );

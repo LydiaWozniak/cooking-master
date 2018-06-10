@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-// import EmptyStar from '../atoms/EmptyStar.svg';
-// import Star from '../atoms/Star.svg';
+import EmptyStar from '../atoms/EmptyStar.svg';
+import Star from '../atoms/Star.svg';
 
 
 const StarredButton = styled.button`
-  height: 20px;
-  align-self: center; 
-  }
+  align-self: center;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 `;
 
-const FilledStar = styled.div`
-  background: red;
+const FilledStar = styled.img`
+  height: 20px;
   `
-const Star = styled.div`
-background: green;
+const EmptyStarButton = styled.img`
+  height: 20px;
 `
 
 class StarButton extends Component {
@@ -34,13 +39,13 @@ class StarButton extends Component {
     return (
       <StarredButton onClick={this.props.starOnChange}>
         {(this.props.starred) ? 
-          (<FilledStar alt='favorite Recipe'/>):
-          (<Star alt='not a favorite Recipe'/>)
+          (<FilledStar src={Star} alt='favorite Recipe'/>):
+          (<EmptyStarButton src={EmptyStar} alt='not a favorite Recipe'/>)
         }
       </StarredButton>
 
     );
-  }
+  } 
 }
 
 export default StarButton;
