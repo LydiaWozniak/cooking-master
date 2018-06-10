@@ -24,6 +24,16 @@ const Image = styled.img`
   align-self: center; 
 `;
 
+const Exit = styled.button`
+  height: 20px; 
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+`; 
 
 class FullRecipe extends Component {
 
@@ -53,14 +63,15 @@ class FullRecipe extends Component {
       <RecipeContents>
           <h1>{this.props.name}</h1>
           <List>
-            <li><h3>{this.props.cookingTime}</h3></li>
+            <li><h3>Cooking Time: {this.props.cookingTime}</h3></li>
+            <h3>Ingredients:</h3>
             {this.props.ingredients.map(({quantity, name}) => (
               <li key={name}>{quantity} of {name}</li>  
             ))}
           </List> 
         <Image src={this.props.image} alt={this.props.name}/> 
         <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />
-        <button onClick={this.props.onClick}><span role='img' aria-label="exit-button">❌</span></button>
+        <Exit onClick={this.props.onClick}><span role='img' aria-label="exit-button">❌</span></Exit>
       </RecipeContents>  
         
     );

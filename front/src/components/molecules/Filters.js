@@ -11,7 +11,7 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  padding-left: 1em; 
+  margin-left: 1em; 
   list-style-type: none; 
 
   &:hover {
