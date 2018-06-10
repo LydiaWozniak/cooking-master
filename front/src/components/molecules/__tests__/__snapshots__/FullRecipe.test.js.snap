@@ -2,56 +2,10 @@
 
 exports[`<FullRecipe /> should match default snapshot 1`] = `
 <article
-  className="sc-bxivhb jXruiR"
+  className="sc-bxivhb fjRCXk"
 >
-  <h1>
-    Lemon Cheese Cake
-  </h1>
-  <ul
-    className="sc-ifAKCX bbyWFJ"
-  >
-    <li>
-      <h3>
-        Cooking Time: 
-        40 minutes
-      </h3>
-    </li>
-    <h3>
-      Ingredients:
-    </h3>
-    <li>
-      4
-       of 
-      Eggs
-    </li>
-    <li>
-      1 cup
-       of 
-      Cream Cheese
-    </li>
-    <li>
-      5
-       of 
-      Lemon
-    </li>
-  </ul>
-  <img
-    alt="Lemon Cheese Cake"
-    className="sc-EHOje bhjIfj"
-    src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"
-  />
   <button
-    className="sc-bdVaJa fDYnfT"
-    onClick={undefined}
-  >
-    <img
-      alt="not a favorite Recipe"
-      className="sc-htpNat FpryX"
-      src="EmptyStar.svg"
-    />
-  </button>
-  <button
-    className="sc-bZQynM bMwOlk"
+    className="sc-gzVnrw dtJdDF"
     onClick={undefined}
   >
     <span
@@ -61,5 +15,53 @@ exports[`<FullRecipe /> should match default snapshot 1`] = `
       ❌
     </span>
   </button>
+  <div
+    className="sc-bZQynM hrlpxY"
+  >
+    <h1>
+      Lemon Cheese Cake
+    </h1>
+    <button
+      className="sc-bdVaJa fDYnfT"
+      onClick={undefined}
+    >
+      <img
+        alt="not a favorite Recipe"
+        className="sc-htpNat dUtRtU"
+        src="EmptyStar.svg"
+      />
+    </button>
+  </div>
+  <img
+    alt="Lemon Cheese Cake"
+    className="sc-ifAKCX euFjZl"
+    src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"
+  />
+  <h3>
+    Cooking Time: 
+    40 minutes
+  </h3>
+  <ul
+    className="sc-EHOje dqPlEB"
+  >
+    <h3>
+      To make this recipe at home, you will need:
+    </h3>
+    <li>
+      4
+       
+      Eggs
+    </li>
+    <li>
+      1 cup
+       
+      Cream Cheese
+    </li>
+    <li>
+      5
+       
+      Lemon
+    </li>
+  </ul>
 </article>
 `;

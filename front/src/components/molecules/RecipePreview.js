@@ -5,24 +5,31 @@ import StarButton from './StarButton';
 // import recipes from '../../assets/recipes.json'; 
 
 const RecipeContents = styled.article`
+  background: white; 
   display: flex; 
+  flex-direction: column; 
   flex-wrap: nowrap;
   justify-content: space-evenly; 
   align-content: center;  
-  border: 2px solid #635155;
-  margin: 10%; 
+  border: 2px solid #c9c5c6;
+  border-radius: 5px; 
+  padding: 2%; 
+  margin: 5% 10%; 
+  width: 30%; 
   box-sizing: border-box;
 `;
 
-const List = styled.ul`
-  list-style-type: none;
-  align-self: center; 
+const TitleBlock = styled.div`
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
 `;
 
 const Image = styled.img`
-  height: 50px;
-  width: 50px;
+  height: auto; 
+  width: 90%; 
   align-self: center; 
+  padding: 5%; 
 `;
 
 const Expand = styled.button`
@@ -34,21 +41,10 @@ const Expand = styled.button`
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  &:hover{
+    text-shadow: 1px 1px #D3D0C9;
+    }
 `;
-
-// class Preview extends Component {
-// render() {
-//   return <RecipeContents>
-//     {Object.keys(recipes).map((key, index) => (
-//       <List key={key}>
-//         <li>{recipes[key].name}</li>
-//         <li>{recipes[key].mainIngredients}</li>
-//         <li>{recipes[key].cookingTime}</li>
-//       </List>
-//     ))}
-//   </RecipeContents>
-// }
-// }
 
 class RecipePreview extends Component {
 
@@ -67,12 +63,12 @@ class RecipePreview extends Component {
   render() {
     return (
       <RecipeContents>
-        <List>
-          <li><h1>{this.props.name}</h1></li>
-        </List>   
+        <TitleBlock>
+          <h1>{this.props.name}</h1>
+          <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />
+        </TitleBlock>
         <Image src={this.props.image} alt={this.props.name}/> 
-        <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />
-        <Expand onClick={this.props.onClick}> Click to expand </Expand>
+        <Expand onClick={this.props.onClick}>Click to see more</Expand>
       </RecipeContents>  
         
     );

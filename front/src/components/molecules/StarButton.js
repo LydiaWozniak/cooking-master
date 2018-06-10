@@ -18,9 +18,15 @@ const StarredButton = styled.button`
 
 const FilledStar = styled.img`
   height: 20px;
+  &:hover{
+    transform: scale(1.5);
   `
 const EmptyStarButton = styled.img`
   height: 20px;
+  &:hover{
+    background: url(${Star});
+    transform: scale(1.5);
+  }
 `
 
 class StarButton extends Component {
@@ -31,8 +37,7 @@ class StarButton extends Component {
 
   static propTypes = {
     starOnChange: PropTypes.func,
-    starred: PropTypes.bool
-    // className: PropTypes.string.isRequired,
+    starred: PropTypes.bool, 
   }
 
   render() {

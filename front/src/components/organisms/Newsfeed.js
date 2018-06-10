@@ -6,9 +6,12 @@ import FullRecipe from '../molecules/FullRecipe.js';
 import recipes from '../../assets/recipes.json'; 
 
 const Container = styled.article`
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: wrap; 
 	background: #FFFFFF; 
-	border: 2px solid #635155;
-	border-radius: 5px; 
+	/* border: 2px solid #635155;
+	border-radius: 5px;  */
 	width: 100%; 
 `; 
 
