@@ -34,6 +34,10 @@ To Visit App:
 
 ## More Information
 
-  - The trello board I made to accompany this project is found <a href="https://trello.com/b/DW9VZ39X/%F0%9F%91%A9%F0%9F%8F%BB%F0%9F%8D%B3cooking-master" target="_blank">here.</a>
+  * The trello board I made to accompany this project is found <a href="https://trello.com/b/DW9VZ39X/%F0%9F%91%A9%F0%9F%8F%BB%F0%9F%8D%B3cooking-master" target="_blank">here.</a>
+  * Testing: 
+    * Continuous Integration: config.yml file for circleci.
+    * Unit tests using Jest. 
+  
 
 
