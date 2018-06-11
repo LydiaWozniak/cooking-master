@@ -1,6 +1,6 @@
 # Cooking Master
 
-An application displays and allows users to filter through recipes. Built with react and styled-components. 
+A recipe application which displays and allows users to filter through recipes. Built with react and styled-components. 
 
 ## The Application in Action
 
