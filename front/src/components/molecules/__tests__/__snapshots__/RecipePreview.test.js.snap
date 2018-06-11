@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecipePreview /> should match default snapshot 1`] = `
+<article
+  className="sc-bxivhb daAlAn"
+>
+  <div
+    className="sc-ifAKCX bVBcEN"
+  >
+    <h1>
+      Lemon Cheese Cake
+    </h1>
+    <button
+      className="sc-bdVaJa fDYnfT"
+      onClick={undefined}
+    >
+      <img
+        alt="not a favorite Recipe"
+        className="sc-htpNat dUtRtU"
+        src="EmptyStar.svg"
+      />
+    </button>
+  </div>
+  <img
+    alt="Lemon Cheese Cake"
+    className="sc-EHOje kqKSJf"
+    src="https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"
+  />
+  <button
+    className="sc-bZQynM cTqsEb"
+    onClick={undefined}
+  >
+    Click to see more
+  </button>
+</article>
+`;

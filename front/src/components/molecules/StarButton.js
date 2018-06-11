@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import EmptyStar from '../atoms/EmptyStar.svg';
 import Star from '../atoms/Star.svg';
 
-
 const StarredButton = styled.button`
   align-self: center;
   background: none;
@@ -20,14 +19,16 @@ const FilledStar = styled.img`
   height: 20px;
   &:hover{
     transform: scale(1.5);
-  `
+  }
+`;
+
 const EmptyStarButton = styled.img`
   height: 20px;
   &:hover{
     background: url(${Star});
     transform: scale(1.5);
   }
-`
+`;
 
 class StarButton extends Component {
 
