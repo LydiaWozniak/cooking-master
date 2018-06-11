@@ -1,4 +1,4 @@
-# Cooking Master
+# Cooking Master 👩🏻‍🍳
 
 A recipe application which displays and allows users to filter through recipes. Built with react and styled-components. 
 
