@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match default snapshot 1`] = `
+<header
+  className="sc-bdVaJa kLCyua"
+>
+  <h1>
+    Cooking Master
+    <div
+      className="sc-bwzfXH bBScxE"
+    >
+      <span
+        aria-label="chef"
+        role="img"
+      >
+        👩🏻‍🍳
+      </span>
+    </div>
+  </h1>
+</header>
+`;

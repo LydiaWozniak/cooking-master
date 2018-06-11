@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import FullRecipe from '../FullRecipe';
+import RecipePreview from '../RecipePreview';
 
 const recipe = {
   name: "Lemon Cheese Cake",
@@ -14,13 +14,11 @@ const recipe = {
   image: "https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg", 
 };
 
-describe('<FullRecipe />', () => {
+describe('<RecipePreview />', () => {
   it('should match default snapshot', () => {
     const tree = renderer.create(
-      <FullRecipe
+      <RecipePreview
         name={recipe.name} 
-        cookingTime={recipe.cookingTime}
-        ingredients={recipe.ingredients} 
         image={recipe.image}
       />
     ).toJSON();

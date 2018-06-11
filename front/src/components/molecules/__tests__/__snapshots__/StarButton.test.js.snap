@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StarButton /> should match default snapshot 1`] = `
+<button
+  className="sc-bdVaJa fDYnfT"
+  onClick={undefined}
+>
+  <img
+    alt="not a favorite Recipe"
+    className="sc-htpNat dUtRtU"
+    src="EmptyStar.svg"
+  />
+</button>
+`;
+
+exports[`<StarButton /> should match default snapshot 2`] = `
+<button
+  className="sc-bdVaJa fDYnfT"
+  onClick={undefined}
+>
+  <img
+    alt="not a favorite Recipe"
+    className="sc-htpNat dUtRtU"
+    src="EmptyStar.svg"
+  />
+</button>
+`;
+
+exports[`<StarButton /> should match default snapshot 3`] = `
+<button
+  className="sc-bdVaJa fDYnfT"
+  onClick={undefined}
+>
+  <img
+    alt="favorite Recipe"
+    className="sc-bwzfXH hiiscl"
+    src="Star.svg"
+  />
+</button>
+`;

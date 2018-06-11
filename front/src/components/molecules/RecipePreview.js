@@ -55,7 +55,7 @@ class RecipePreview extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
     starOnChange: PropTypes.func, 
     starred: PropTypes.bool, 
   }
