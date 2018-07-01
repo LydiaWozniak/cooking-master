@@ -2,7 +2,15 @@
 
 exports[`<Footer /> should match default snapshot 1`] = `
 <footer
-  className="sc-bdVaJa fYVHKT"
+  style={
+    Object {
+      "background": "#635155",
+      "color": "white",
+      "display": "flex",
+      "justifyContent": "center",
+      "padding": "2%",
+    }
+  }
 >
   Made by 
 </footer>

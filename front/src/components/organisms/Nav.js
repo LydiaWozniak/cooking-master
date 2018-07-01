@@ -23,7 +23,7 @@ export default class Nav extends Component {
   render() {
     return (
       <NavBar>
-        <Filters onChange={this.props.filtersOnChange} />
+        <Filters onChangeFilters={this.props.filtersOnChange} />
         <SearchBox onChange={this.props.searchOnChange} /> 
       </NavBar>   
     )

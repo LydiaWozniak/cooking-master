@@ -32,30 +32,27 @@ export default class Newsfeed extends Component {
 		starred: [], 
 	}
 	//lifecycle methods
+
 	componentWillReceiveProps(nextProps) {
-		this.handleCollapseClick(this.state.openedRecipe);
+		this.toggleCollapse(this.state.openedRecipe);
 	}
 
 	getFilteredRecipes = () => recipes
 		.filter(recipe =>
 			this.props.filter === 'all' ||
-			this.state.starred.some(item => item === recipe)
+			this.starred(recipe)
 		)
-		.filter(recipe =>
-			this.props.search === '' || 
-			recipe.name.match(new RegExp(this.props.search, 'gi')) ||
-			recipe.mainIngredients.some(ingredient => ingredient.match(new RegExp(this.props.search, 'gi'))) ||
-			recipe.ingredients.some(({name}) => name.match(new RegExp(this.props.search, 'gi')))
-		);
+		.filter(this.textFilter);
+	
+	textFilter = (recipe) => this.props.search === '' || 
+	recipe.name.match(new RegExp(this.props.search, 'gi')) ||
+	recipe.mainIngredients.some(ingredient => ingredient.match(new RegExp(this.props.search, 'gi'))) ||
+	recipe.ingredients.some(({name}) => name.match(new RegExp(this.props.search, 'gi')));
 
 	starred = recipe => this.state.starred.some(item => item === recipe);
 
-	handleExpandClick = (key) => {
+	toggleCollapse = (key) => {
 		this.setState({openedRecipe: key});
-	}
-
-	handleCollapseClick = (key) => {
-		this.setState({openedRecipe: null});
 	}
 
 	toggleStarred = (key) => {
@@ -72,7 +69,7 @@ export default class Newsfeed extends Component {
 					{Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => (
 						key === this.state.openedRecipe ? (
 							<FullRecipe
-								onClick={() => this.handleCollapseClick(key)}
+								onClick={() => this.toggleCollapse(null)}
 								key={key}
 								name={recipe.name} 
 								cookingTime={recipe.cookingTime}
@@ -83,7 +80,7 @@ export default class Newsfeed extends Component {
 							/>
 						) : (
 							<RecipePreview
-								onClick={() => this.handleExpandClick(key)}
+								onClick={() => this.toggleCollapse(key)}
 								key={key}
 								name={recipe.name} 
 								image={recipe.image}

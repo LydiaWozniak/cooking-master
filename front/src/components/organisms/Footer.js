@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const EndFooter = styled.footer`
-background: #635155;
-padding: 2%;
-display: flex;
-justify-content: center; 
-color: white; 
-`;
+const endFooterStyling = {
+background: '#635155',
+padding: '2%',
+display: 'flex',
+justifyContent: 'center',
+color: 'white', 
+}
 
 export default class Footer extends Component {
   render() {
     return (
-      <EndFooter>
+      <footer style={endFooterStyling} >
       Made by {this.props.name}
-      </EndFooter> 
+      </footer> 
     )
   }
 }
