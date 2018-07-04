@@ -2,7 +2,7 @@
 
 exports[`<Page /> should match default snapshot 1`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-kGXeez gJVHub"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -200,7 +200,15 @@ exports[`<Page /> should match default snapshot 1`] = `
     </div>
   </div>
   <footer
-    className="sc-kGXeez hKHqjx"
+    style={
+      Object {
+        "background": "#635155",
+        "color": "white",
+        "display": "flex",
+        "justifyContent": "center",
+        "padding": "2%",
+      }
+    }
   >
     Made by 
     Lydia
@@ -210,7 +218,7 @@ exports[`<Page /> should match default snapshot 1`] = `
 
 exports[`<Page /> should match default snapshot 2`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-kGXeez gJVHub"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -408,7 +416,15 @@ exports[`<Page /> should match default snapshot 2`] = `
     </div>
   </div>
   <footer
-    className="sc-kGXeez hKHqjx"
+    style={
+      Object {
+        "background": "#635155",
+        "color": "white",
+        "display": "flex",
+        "justifyContent": "center",
+        "padding": "2%",
+      }
+    }
   >
     Made by 
     Lydia
@@ -418,7 +434,7 @@ exports[`<Page /> should match default snapshot 2`] = `
 
 exports[`<Page /> should match default snapshot 3`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-kGXeez gJVHub"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -616,7 +632,15 @@ exports[`<Page /> should match default snapshot 3`] = `
     </div>
   </div>
   <footer
-    className="sc-kGXeez hKHqjx"
+    style={
+      Object {
+        "background": "#635155",
+        "color": "white",
+        "display": "flex",
+        "justifyContent": "center",
+        "padding": "2%",
+      }
+    }
   >
     Made by 
     Lydia
@@ -626,7 +650,7 @@ exports[`<Page /> should match default snapshot 3`] = `
 
 exports[`<Page /> should match default snapshot 4`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-kGXeez gJVHub"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -824,7 +848,15 @@ exports[`<Page /> should match default snapshot 4`] = `
     </div>
   </div>
   <footer
-    className="sc-kGXeez hKHqjx"
+    style={
+      Object {
+        "background": "#635155",
+        "color": "white",
+        "display": "flex",
+        "justifyContent": "center",
+        "padding": "2%",
+      }
+    }
   >
     Made by 
     Lydia
@@ -834,7 +866,7 @@ exports[`<Page /> should match default snapshot 4`] = `
 
 exports[`<Page /> should match default snapshot 5`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-kGXeez gJVHub"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -1032,7 +1064,15 @@ exports[`<Page /> should match default snapshot 5`] = `
     </div>
   </div>
   <footer
-    className="sc-kGXeez hKHqjx"
+    style={
+      Object {
+        "background": "#635155",
+        "color": "white",
+        "display": "flex",
+        "justifyContent": "center",
+        "padding": "2%",
+      }
+    }
   >
     Made by 
     Lydia

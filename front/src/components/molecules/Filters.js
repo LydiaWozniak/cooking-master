@@ -32,11 +32,11 @@ const Starred = styled.img`
 class Filters extends Component {
 
   static propTypes = {
-    onChange: PropTypes.func.isRequired,
+    onChangeFilters: PropTypes.func.isRequired,
   }
 
-  filterAll = () => this.props.onChange('all'); 
-  filterStarred = () => this.props.onChange('starred'); 
+  filterAll = () => this.props.onChangeFilters('all'); 
+  filterStarred = () => this.props.onChangeFilters('starred'); 
 
   render() {
     return (
