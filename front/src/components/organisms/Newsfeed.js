@@ -66,9 +66,9 @@ export default class Newsfeed extends Component {
 		const display = (
 			<div>
 				<Container>
-					{Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => (
-						key === this.state.openedRecipe ? (
-							<FullRecipe
+					{(this.state.openedRecipe !== null) ? (Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => 
+						(key === this.state.openedRecipe) ?
+							(<FullRecipe
 								onClick={() => this.toggleCollapse(null)}
 								key={key}
 								name={recipe.name} 
@@ -78,8 +78,9 @@ export default class Newsfeed extends Component {
 								starOnChange={() => this.toggleStarred(recipe)}
 								starred={this.starred(recipe)}
 							/>
-						) : (
-							<RecipePreview
+						):(null))) 
+						 : ( (Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => 
+							(<RecipePreview
 								onClick={() => this.toggleCollapse(key)}
 								key={key}
 								name={recipe.name} 
@@ -87,8 +88,7 @@ export default class Newsfeed extends Component {
 								starOnChange={() => this.toggleStarred(recipe)}
 								starred={this.starred(recipe)}
 							/>
-						) 
-					))} 
+						))))} 
 				</Container>   
 			</div>
 			)
