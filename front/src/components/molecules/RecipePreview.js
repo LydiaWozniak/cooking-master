@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import StarButton from './StarButton';
-// import recipes from '../../assets/recipes.json'; 
 
 const RecipeContents = styled.article`
   background: white; 

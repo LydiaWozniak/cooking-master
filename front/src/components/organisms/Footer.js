@@ -12,7 +12,7 @@ color: 'white',
 export default class Footer extends Component {
   render() {
     return (
-      <footer style={endFooterStyling} >
+      <footer style={endFooterStyling}>
       Made by {this.props.name}
       </footer> 
     )

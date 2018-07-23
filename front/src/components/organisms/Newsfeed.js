@@ -15,6 +15,11 @@ const Container = styled.article`
 	width: 100%; 
 `; 
 
+const Error = styled.article`
+	display: flex; 
+	height: 10em; 
+`
+
 export default class Newsfeed extends Component {
 
 	static propTypes = {
@@ -31,8 +36,7 @@ export default class Newsfeed extends Component {
 		openedRecipe: null, 
 		starred: [], 
 	}
-	//lifecycle methods
-
+	//lifecycle method
 	componentWillReceiveProps(nextProps) {
 		this.toggleCollapse(this.state.openedRecipe);
 	}
@@ -47,7 +51,7 @@ export default class Newsfeed extends Component {
 	textFilter = (recipe) => this.props.search === '' || 
 	recipe.name.match(new RegExp(this.props.search, 'gi')) ||
 	recipe.mainIngredients.some(ingredient => ingredient.match(new RegExp(this.props.search, 'gi'))) ||
-	recipe.ingredients.some(({name}) => name.match(new RegExp(this.props.search, 'gi')));
+	recipe.ingredients.some(({name}) => name.match(new RegExp(this.props.search, 'gi'))); 
 
 	starred = recipe => this.state.starred.some(item => item === recipe);
 
@@ -63,39 +67,59 @@ export default class Newsfeed extends Component {
   }
 		
 	render() {
+
+		const errorMessage = (
+			<div>
+				<Error>
+					Sorry, no recipes were found
+				</Error>
+			</div>
+		)
+		const fullRecipeRender = (key, recipe) =>(
+		<FullRecipe
+			onClick={() => this.toggleCollapse(null)}
+			key={key}
+			name={recipe.name} 
+			cookingTime={recipe.cookingTime}
+			ingredients={recipe.ingredients} 
+			image={recipe.image}
+			starOnChange={() => this.toggleStarred(recipe)}
+			starred={this.starred(recipe)}
+			/>
+		);
+		const recipePreviewRender = (key, recipe) => (
+			<RecipePreview
+				onClick={() => this.toggleCollapse(key)}
+				key={key}
+				name={recipe.name} 
+				image={recipe.image}
+				starOnChange={() => this.toggleStarred(recipe)}
+				starred={this.starred(recipe)}
+				/>
+		)
+
 		const display = (
 			<div>
 				<Container>
-					{(this.state.openedRecipe !== null) ? (Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => 
-						(key === this.state.openedRecipe) ?
-							(<FullRecipe
-								onClick={() => this.toggleCollapse(null)}
-								key={key}
-								name={recipe.name} 
-								cookingTime={recipe.cookingTime}
-								ingredients={recipe.ingredients} 
-								image={recipe.image}
-								starOnChange={() => this.toggleStarred(recipe)}
-								starred={this.starred(recipe)}
-							/>
-						):(null))) 
-						 : ( (Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => 
-							(<RecipePreview
-								onClick={() => this.toggleCollapse(key)}
-								key={key}
-								name={recipe.name} 
-								image={recipe.image}
-								starOnChange={() => this.toggleStarred(recipe)}
-								starred={this.starred(recipe)}
-							/>
-						))))} 
+					{(this.state.openedRecipe !== null) ? 
+					(Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => 
+							(key === this.state.openedRecipe) ? (fullRecipeRender(key, recipe)):(null)))
+					: ((Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => 
+							(recipePreviewRender(key, recipe))).length) === 0) ? (errorMessage) : (Object.entries(this.getFilteredRecipes()).map(([key, recipe]) => 
+							(recipePreviewRender(key, recipe))))
+							
+						} 
 				</Container>   
 			</div>
 			)
 		return (
 		<div>
-			{display}
+			{
+				display
+			}
 		</div>
 		)
 	}
 }
+
+

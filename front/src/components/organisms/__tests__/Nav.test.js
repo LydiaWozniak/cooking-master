@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import toJSON from 'enzyme-to-json'; 
-
 import Nav from '../Nav';
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 
 
 describe('Nav', () => {

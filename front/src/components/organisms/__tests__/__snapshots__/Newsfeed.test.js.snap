@@ -487,7 +487,15 @@ exports[`<Newsfeed /> should match snapshot when filtering by starred recipes 1`
   <div>
     <article
       className="sc-gqjmRU kRDSPQ"
-    />
+    >
+      <div>
+        <article
+          className="sc-VigVT grlYNT"
+        >
+          Sorry, no recipes were found
+        </article>
+      </div>
+    </article>
   </div>
 </div>
 `;

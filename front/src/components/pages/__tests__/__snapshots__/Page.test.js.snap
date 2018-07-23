@@ -2,7 +2,7 @@
 
 exports[`<Page /> should match default snapshot 1`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-dxgOiQ bdZCmh"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -240,7 +240,7 @@ exports[`<Page /> should match default snapshot 1`] = `
 
 exports[`<Page /> should match default snapshot 2`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-dxgOiQ bdZCmh"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -478,7 +478,7 @@ exports[`<Page /> should match default snapshot 2`] = `
 
 exports[`<Page /> should match default snapshot 3`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-dxgOiQ bdZCmh"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -716,7 +716,7 @@ exports[`<Page /> should match default snapshot 3`] = `
 
 exports[`<Page /> should match default snapshot 4`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-dxgOiQ bdZCmh"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -954,7 +954,7 @@ exports[`<Page /> should match default snapshot 4`] = `
 
 exports[`<Page /> should match default snapshot 5`] = `
 <div
-  className="sc-kpOJdX gYvxyg"
+  className="sc-dxgOiQ bdZCmh"
 >
   <header
     className="sc-bdVaJa kLCyua"

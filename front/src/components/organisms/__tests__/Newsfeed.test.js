@@ -1,8 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Newsfeed from '../Newsfeed';
-// import { shallow } from 'enzyme';
-// import sinon from 'sinon';
 
 describe('<Newsfeed />', () => {
   it('should match default snapshot', () => {
