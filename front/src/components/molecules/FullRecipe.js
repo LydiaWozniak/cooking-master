@@ -79,7 +79,7 @@ class FullRecipe extends Component {
   render() {
     return (
       <RecipeContents>
-          <Exit onClick={this.props.onClick}><span role='img' aria-label="exit-button">❌</span></Exit>
+          <Exit onClick={this.props.onClick} data-test-id='exit'><span role='img' aria-label="exit-button">❌</span></Exit>
           <TitleBlock>
             <h1>{this.props.name}</h1>
             <StarButton starred={this.props.starred} starOnChange={this.props.starOnChange} />

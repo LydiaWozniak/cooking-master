@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import StarButton from '../StarButton';
+import { shallow } from 'enzyme';
 
 describe('<StarButton />', () => {
 
@@ -40,6 +41,15 @@ describe('<StarButton />', () => {
       <StarButton starred={true} />
     ).toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it('simulates click events', () => {
+    const onButtonClickFcn = jest.fn();
+    const wrapper = shallow(<StarButton 
+      starOnChange={onButtonClickFcn}
+       />);
+    wrapper.simulate('click');
+    expect(onButtonClickFcn).toHaveBeenCalled();
   });
 
 });

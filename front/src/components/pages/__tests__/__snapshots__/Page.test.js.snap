@@ -2,7 +2,7 @@
 
 exports[`<Page /> should match default snapshot 1`] = `
 <div
-  className="sc-kGXeez gJVHub"
+  className="sc-kpOJdX gYvxyg"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -22,13 +22,14 @@ exports[`<Page /> should match default snapshot 1`] = `
     </h1>
   </header>
   <nav
-    className="sc-gzVnrw ebYmzc"
+    className="sc-htoDjs hjaVFT"
   >
     <ul
       className="sc-htpNat dMshuV"
     >
       <li
         className="sc-bxivhb jbfCJm"
+        data-test-id="allBtn"
         onClick={[Function]}
       >
         <span
@@ -43,11 +44,32 @@ exports[`<Page /> should match default snapshot 1`] = `
         <img
           alt="starred"
           className="sc-EHOje gAKosP"
+          data-test-id="starredBtn"
           onClick={[Function]}
           src="Star.svg"
         />
       </li>
     </ul>
+    <select
+      className="sc-gzVnrw eoZEAD"
+      onChange={[Function]}
+    >
+      <option
+        value="Mushroom"
+      >
+        Mushroom
+      </option>
+      <option
+        value="Chicken"
+      >
+        Chicken
+      </option>
+      <option
+        value="Beef"
+      >
+        Beef
+      </option>
+    </select>
     <form
       className="sc-bZQynM dKMWjK"
       onSubmit={[Function]}
@@ -66,131 +88,131 @@ exports[`<Page /> should match default snapshot 1`] = `
   <div>
     <div>
       <article
-        className="sc-kgoBCf dDgnkr"
+        className="sc-kGXeez gmamMX"
       >
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Lemon Chicken
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Lemon Chicken"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Beef Stroganoff
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Beef Stroganoff"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Chicken Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Chicken Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
@@ -211,14 +233,14 @@ exports[`<Page /> should match default snapshot 1`] = `
     }
   >
     Made by 
-    Lydia
+    lydia
   </footer>
 </div>
 `;
 
 exports[`<Page /> should match default snapshot 2`] = `
 <div
-  className="sc-kGXeez gJVHub"
+  className="sc-kpOJdX gYvxyg"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -238,13 +260,14 @@ exports[`<Page /> should match default snapshot 2`] = `
     </h1>
   </header>
   <nav
-    className="sc-gzVnrw ebYmzc"
+    className="sc-htoDjs hjaVFT"
   >
     <ul
       className="sc-htpNat dMshuV"
     >
       <li
         className="sc-bxivhb jbfCJm"
+        data-test-id="allBtn"
         onClick={[Function]}
       >
         <span
@@ -259,11 +282,32 @@ exports[`<Page /> should match default snapshot 2`] = `
         <img
           alt="starred"
           className="sc-EHOje gAKosP"
+          data-test-id="starredBtn"
           onClick={[Function]}
           src="Star.svg"
         />
       </li>
     </ul>
+    <select
+      className="sc-gzVnrw eoZEAD"
+      onChange={[Function]}
+    >
+      <option
+        value="Mushroom"
+      >
+        Mushroom
+      </option>
+      <option
+        value="Chicken"
+      >
+        Chicken
+      </option>
+      <option
+        value="Beef"
+      >
+        Beef
+      </option>
+    </select>
     <form
       className="sc-bZQynM dKMWjK"
       onSubmit={[Function]}
@@ -282,131 +326,131 @@ exports[`<Page /> should match default snapshot 2`] = `
   <div>
     <div>
       <article
-        className="sc-kgoBCf dDgnkr"
+        className="sc-kGXeez gmamMX"
       >
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Lemon Chicken
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Lemon Chicken"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Beef Stroganoff
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Beef Stroganoff"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Chicken Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Chicken Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
@@ -427,14 +471,14 @@ exports[`<Page /> should match default snapshot 2`] = `
     }
   >
     Made by 
-    Lydia
+    lydia
   </footer>
 </div>
 `;
 
 exports[`<Page /> should match default snapshot 3`] = `
 <div
-  className="sc-kGXeez gJVHub"
+  className="sc-kpOJdX gYvxyg"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -454,13 +498,14 @@ exports[`<Page /> should match default snapshot 3`] = `
     </h1>
   </header>
   <nav
-    className="sc-gzVnrw ebYmzc"
+    className="sc-htoDjs hjaVFT"
   >
     <ul
       className="sc-htpNat dMshuV"
     >
       <li
         className="sc-bxivhb jbfCJm"
+        data-test-id="allBtn"
         onClick={[Function]}
       >
         <span
@@ -475,11 +520,32 @@ exports[`<Page /> should match default snapshot 3`] = `
         <img
           alt="starred"
           className="sc-EHOje gAKosP"
+          data-test-id="starredBtn"
           onClick={[Function]}
           src="Star.svg"
         />
       </li>
     </ul>
+    <select
+      className="sc-gzVnrw eoZEAD"
+      onChange={[Function]}
+    >
+      <option
+        value="Mushroom"
+      >
+        Mushroom
+      </option>
+      <option
+        value="Chicken"
+      >
+        Chicken
+      </option>
+      <option
+        value="Beef"
+      >
+        Beef
+      </option>
+    </select>
     <form
       className="sc-bZQynM dKMWjK"
       onSubmit={[Function]}
@@ -498,131 +564,131 @@ exports[`<Page /> should match default snapshot 3`] = `
   <div>
     <div>
       <article
-        className="sc-kgoBCf dDgnkr"
+        className="sc-kGXeez gmamMX"
       >
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Lemon Chicken
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Lemon Chicken"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Beef Stroganoff
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Beef Stroganoff"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Chicken Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Chicken Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
@@ -643,14 +709,14 @@ exports[`<Page /> should match default snapshot 3`] = `
     }
   >
     Made by 
-    Lydia
+    lydia
   </footer>
 </div>
 `;
 
 exports[`<Page /> should match default snapshot 4`] = `
 <div
-  className="sc-kGXeez gJVHub"
+  className="sc-kpOJdX gYvxyg"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -670,13 +736,14 @@ exports[`<Page /> should match default snapshot 4`] = `
     </h1>
   </header>
   <nav
-    className="sc-gzVnrw ebYmzc"
+    className="sc-htoDjs hjaVFT"
   >
     <ul
       className="sc-htpNat dMshuV"
     >
       <li
         className="sc-bxivhb jbfCJm"
+        data-test-id="allBtn"
         onClick={[Function]}
       >
         <span
@@ -691,11 +758,32 @@ exports[`<Page /> should match default snapshot 4`] = `
         <img
           alt="starred"
           className="sc-EHOje gAKosP"
+          data-test-id="starredBtn"
           onClick={[Function]}
           src="Star.svg"
         />
       </li>
     </ul>
+    <select
+      className="sc-gzVnrw eoZEAD"
+      onChange={[Function]}
+    >
+      <option
+        value="Mushroom"
+      >
+        Mushroom
+      </option>
+      <option
+        value="Chicken"
+      >
+        Chicken
+      </option>
+      <option
+        value="Beef"
+      >
+        Beef
+      </option>
+    </select>
     <form
       className="sc-bZQynM dKMWjK"
       onSubmit={[Function]}
@@ -714,131 +802,131 @@ exports[`<Page /> should match default snapshot 4`] = `
   <div>
     <div>
       <article
-        className="sc-kgoBCf dDgnkr"
+        className="sc-kGXeez gmamMX"
       >
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Lemon Chicken
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Lemon Chicken"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Beef Stroganoff
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Beef Stroganoff"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Chicken Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Chicken Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
@@ -859,14 +947,14 @@ exports[`<Page /> should match default snapshot 4`] = `
     }
   >
     Made by 
-    Lydia
+    lydia
   </footer>
 </div>
 `;
 
 exports[`<Page /> should match default snapshot 5`] = `
 <div
-  className="sc-kGXeez gJVHub"
+  className="sc-kpOJdX gYvxyg"
 >
   <header
     className="sc-bdVaJa kLCyua"
@@ -886,13 +974,14 @@ exports[`<Page /> should match default snapshot 5`] = `
     </h1>
   </header>
   <nav
-    className="sc-gzVnrw ebYmzc"
+    className="sc-htoDjs hjaVFT"
   >
     <ul
       className="sc-htpNat dMshuV"
     >
       <li
         className="sc-bxivhb jbfCJm"
+        data-test-id="allBtn"
         onClick={[Function]}
       >
         <span
@@ -907,11 +996,32 @@ exports[`<Page /> should match default snapshot 5`] = `
         <img
           alt="starred"
           className="sc-EHOje gAKosP"
+          data-test-id="starredBtn"
           onClick={[Function]}
           src="Star.svg"
         />
       </li>
     </ul>
+    <select
+      className="sc-gzVnrw eoZEAD"
+      onChange={[Function]}
+    >
+      <option
+        value="Mushroom"
+      >
+        Mushroom
+      </option>
+      <option
+        value="Chicken"
+      >
+        Chicken
+      </option>
+      <option
+        value="Beef"
+      >
+        Beef
+      </option>
+    </select>
     <form
       className="sc-bZQynM dKMWjK"
       onSubmit={[Function]}
@@ -930,131 +1040,131 @@ exports[`<Page /> should match default snapshot 5`] = `
   <div>
     <div>
       <article
-        className="sc-kgoBCf dDgnkr"
+        className="sc-kGXeez gmamMX"
       >
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Lemon Chicken
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Lemon Chicken"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://assets.simplyrecipes.com/wp-content/uploads/2010/03/lemon-chicken-horiz-a-1600.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Beef Stroganoff
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Beef Stroganoff"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="http://www.daringgourmet.com/wp-content/uploads/2014/12/Slow-Cooker-Beef-Stroganoff-2-web-edited.jpg"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
           </button>
         </article>
         <article
-          className="sc-gZMcBi inwnNL"
+          className="sc-gqjmRU cwbCPD"
         >
           <div
-            className="sc-gqjmRU ljbwMe"
+            className="sc-VigVT eaARUA"
           >
             <h1>
               Chicken Ceasar Salad
             </h1>
             <button
-              className="sc-htoDjs bIWntg"
+              className="sc-dnqmqq fOAjwu"
               onClick={[Function]}
             >
               <img
                 alt="not a favorite Recipe"
-                className="sc-iwsKbI jQAyFz"
+                className="sc-gZMcBi ekOSZp"
                 src="EmptyStar.svg"
               />
             </button>
           </div>
           <img
             alt="Chicken Ceasar Salad"
-            className="sc-VigVT jyPryD"
+            className="sc-jTzLTM eAPKWj"
             src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--327831_11.jpg?itok=8GjuBS4F"
           />
           <button
-            className="sc-jTzLTM bsoPaI"
+            className="sc-fjdhpX gOIRDV"
             onClick={[Function]}
           >
             Click to see more
@@ -1075,7 +1185,7 @@ exports[`<Page /> should match default snapshot 5`] = `
     }
   >
     Made by 
-    Lydia
+    lydia
   </footer>
 </div>
 `;

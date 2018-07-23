@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import FullRecipe from '../FullRecipe';
+import { shallow } from 'enzyme';
 
 const recipe = {
   name: "Lemon Cheese Cake",
@@ -26,4 +27,19 @@ describe('<FullRecipe />', () => {
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it('simulates click events', () => {
+    const onButtonClick = jest.fn();
+    const wrapper = shallow(
+    <FullRecipe 
+        onClick={onButtonClick}
+        name={recipe.name} 
+        cookingTime={recipe.cookingTime}
+        ingredients={recipe.ingredients} 
+        image={recipe.image}
+       />);
+    wrapper.find('[data-test-id="exit"]').simulate('click')
+    expect(onButtonClick).toHaveBeenCalled();
+  });
+
 });

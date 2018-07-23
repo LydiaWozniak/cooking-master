@@ -44,6 +44,5 @@ describe('<Page />', () => {
     const tree = renderer.create(<Page search="" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });
 

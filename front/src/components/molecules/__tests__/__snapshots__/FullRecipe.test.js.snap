@@ -6,6 +6,7 @@ exports[`<FullRecipe /> should match default snapshot 1`] = `
 >
   <button
     className="sc-gzVnrw dtJdDF"
+    data-test-id="exit"
     onClick={undefined}
   >
     <span

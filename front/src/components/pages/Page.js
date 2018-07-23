@@ -9,6 +9,9 @@ const Main = styled.div`
   font-family: 'Roboto', sans-serif;
 `;
 
+// const names = ['Lydia', 'Loopy', 'Lolly'];
+// names[Math.floor(Math.random() * Math.floor(3))]
+
 class Page extends Component {
 
   state = {
@@ -26,6 +29,7 @@ class Page extends Component {
     this.setState({filter : 'all'})
   }
 
+
   render() {
     return (
       <Main>
@@ -33,13 +37,14 @@ class Page extends Component {
         <Nav 
           filtersOnChange={this.handleFiltersOnChange}
           searchOnChange={this.handleSearchOnChange}
+          dropDownSelect={this.handleSearchOnChange}
         /> 
         <Newsfeed 
           filter={this.state.filter}
           search={this.state.search}
         />
         <Footer
-          name='Lydia'
+          name='lydia'
         />
       </Main>
     );

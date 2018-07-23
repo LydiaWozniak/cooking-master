@@ -41,8 +41,8 @@ class Filters extends Component {
   render() {
     return (
       <List>
-          <Item onClick={this.filterAll}><All>All</All></Item>
-          <Item><Starred onClick={this.filterStarred} src={star} alt="starred"/></Item>
+          <Item data-test-id='allBtn' onClick={this.filterAll}><All>All</All></Item>
+          <Item><Starred data-test-id='starredBtn' onClick={this.filterStarred} src={star} alt="starred"/></Item>
       </List>   
         
     );
